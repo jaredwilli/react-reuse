@@ -1,0 +1,63 @@
+body {
+    color: #333;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+a,
+a:visited {
+    color: #666;
+}
+
+.clear {
+    clear: both;
+}
+
+td {
+    border-top: 1px solid #d3d3d3;
+}
+
+td,
+th {
+    padding: 10px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+/* Documentation site component styles */
+.example {
+    border: solid 1px #d3d3d3;
+    padding: 16px;
+    margin-bottom: 16px;
+    background-color: #f4f6f9;
+}
+
+.example h4:first-of-type {
+    margin-top: 0;
+}
+
+.example p:last-of-type {
+    margin-bottom: 0;
+}
+
+.props tr td:last-of-type {
+    text-align: center;
+}
+
+.props th,
+td {
+    text-align: left;
+    padding: 5px;
+}
+
+.navigation {
+    float: left;
+    width: 250px;
+    list-style-type: none;
+    padding: 0;
+}
+
+.component-page {
+    margin-left: 275px;
+}

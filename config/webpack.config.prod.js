@@ -180,6 +180,9 @@ module.exports = {
                                             ),
                                             options: {
                                                 importLoaders: 1,
+                                                // Enable CSS Modules
+                                                // modules: true,
+                                                // localIdentName: '[name]_[local]_[hash:base64:5]',
                                                 minimize: true,
                                                 sourceMap: shouldUseSourceMap
                                             }

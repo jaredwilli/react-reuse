@@ -13,7 +13,8 @@ const paths = {
 const enableWatchMode = process.argv.slice(2) == '--watch';
 if (enableWatchMode) {
     // Regenerate component data when components change
-    chokidar.watch([paths.examples, paths.components])
+    chokidar
+        .watch([paths.examples, paths.components])
         .on('change', (event, path) => {
             generate(paths);
         });
@@ -25,21 +26,29 @@ if (enableWatchMode) {
 function generate(paths) {
     let errors = [];
 
-    const componentData = getDirectories(paths.components).map(componentName => {
-        try {
-            return getComponentData(paths, componentName);
-        } catch(error) {
-            errors.push(`An error occurred whil attemping to generate metadata for ${componentName}. ${error}`);
+    const componentData = getDirectories(paths.components).map(
+        componentName => {
+            try {
+                return getComponentData(paths, componentName);
+            } catch (error) {
+                errors.push(
+                    `An error occurred whil attemping to generate metadata for ${componentName}. ${error}`
+                );
+            }
         }
-    });
+    );
 
-    writeFile(paths.output, 'module.exports = ' + JSON.stringify(errors.length
-        ? errors
-        : componentData));
+    writeFile(
+        paths.output,
+        'module.exports = ' +
+            JSON.stringify(errors.length ? errors : componentData)
+    );
 }
 
 function getComponentData(paths, componentName) {
-    const content = readFile(path.join(paths.components, componentName, `${componentName}.js`));
+    const content = readFile(
+        path.join(paths.components, componentName, `${componentName}.js`)
+    );
     const info = parse(content);
 
     return {
@@ -47,7 +56,7 @@ function getComponentData(paths, componentName) {
         description: info.description,
         props: info.props,
         code: content,
-        examples: getExampleData(paths.examples , componentName)
+        examples: getExampleData(paths.examples, componentName)
     };
 }
 
@@ -72,7 +81,7 @@ function getExampleFiles(examplesPath, componentName) {
 
     try {
         exampleFiles = getFiles(path.join(examplesPath, componentName));
-    } catch(error) {
+    } catch (error) {
         console.log(chalk.red(`No examples found for ${componentName}.`));
     }
 
@@ -80,11 +89,15 @@ function getExampleFiles(examplesPath, componentName) {
 }
 
 function getDirectories(filePath) {
-    return fs.readdirSync(filePath).filter(file => fs.statSync(path.join(filePath, file)).isDirectory());
+    return fs
+        .readdirSync(filePath)
+        .filter(file => fs.statSync(path.join(filePath, file)).isDirectory());
 }
 
 function getFiles(filePath) {
-    return fs.readdirSync(filePath).filter(file => fs.statSync(path.join(filePath, file)).isFile());
+    return fs
+        .readdirSync(filePath)
+        .filter(file => fs.statSync(path.join(filePath, file)).isFile());
 }
 
 function writeFile(filePath, content) {
@@ -98,6 +111,3 @@ function writeFile(filePath, content) {
 function readFile(filePath) {
     return fs.readFileSync(filePath, 'utf-8');
 }
-
-
-

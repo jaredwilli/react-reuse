@@ -41,6 +41,10 @@ table {
     margin-bottom: 0;
 }
 
+.example .show-hide-code {
+    cursor: pointer;
+}
+
 .props tr td:last-of-type {
     text-align: center;
 }

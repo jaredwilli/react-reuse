@@ -30,7 +30,7 @@ class Example extends Component {
                 <ExampleComponent />
 
                 <p>
-                    <a href onClick={this.toggleCode}>
+                    <a className="show-hide-code" onClick={this.toggleCode}>
                         {showCode ? 'Hide' : 'Show'} Code
                     </a>
                 </p>

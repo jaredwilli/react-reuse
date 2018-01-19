@@ -6,7 +6,7 @@ import styled from 'styled-components';
 /** Text input with integrated label to enforce consistency in layout, error display, label placement, and required field marker. */
 function TextInput({ htmlId, name, label, type = 'text', required = false, onChange, placeholder, value, error, children, ...props }) {
 
-    const Fieldset = styled.input`
+    const Fieldset = styled.div`
         margin-bottom: 16px;
     `;
 
@@ -22,6 +22,7 @@ function TextInput({ htmlId, name, label, type = 'text', required = false, onCha
     return (
         <Fieldset>
             <Label htmlFor={htmlId} label={label} required={required} />
+
             <Input
                 id={htmlId}
                 type={type}
@@ -31,7 +32,8 @@ function TextInput({ htmlId, name, label, type = 'text', required = false, onCha
                 onChange={onChange}
                 {...props} />
                 {children}
-            {error &&<Error>{error}</Error>}
+
+            {error && <Error>{error}</Error>}
         </Fieldset>
     );
 };

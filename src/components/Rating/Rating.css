@@ -1,0 +1,31 @@
+.checkbox {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+}
+
+.star {
+    display: inline-block;
+    padding: 3px;
+    vertical-align: middle;
+    line-height: 1;
+    font-size: 1.5em;
+    color: #ABABAB;
+    -webkit-transition: color .2s ease-out;
+    transition: color .2s ease-out;
+}
+.star:hover {
+    cursor: pointer;
+}
+
+.star.is-selected {
+    color: #29292A;
+}
+.star.is-disabled:hover {
+    cursor: default;
+}

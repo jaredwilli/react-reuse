@@ -4,7 +4,7 @@ import { shallow } from 'enzyme';
 import StarIcon from './StarIcon';
 
 describe('StarIcon', () => {
-    it('hides password quality by default', () => {
+    it('renders the component correctly', () => {
         const tree = renderer.create(<StarIcon />).toJSON();
         expect(tree).toMatchSnapshot();
     });

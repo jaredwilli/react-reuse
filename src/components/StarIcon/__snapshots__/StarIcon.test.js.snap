@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`StarIcon hides password quality by default 1`] = `
+exports[`StarIcon renders the component correctly 1`] = `
 <svg
   className="star-icon"
   height="32"

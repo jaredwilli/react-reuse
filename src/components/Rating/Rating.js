@@ -43,8 +43,8 @@ class Rating extends React.Component {
           let fillType = '';
 
           if (this.state.rating >= i && this.state.rating !== null) {
-              fillType = 'full';
-            }
+            fillType = 'full';
+          }
 
             stars.push(
                 <a key={i}
@@ -67,10 +67,7 @@ class Rating extends React.Component {
 
 Rating.propTypes = {
     /** The rating value to set initially if needed */
-    rating: PropTypes.number,
-
-    /** Disable star rating component */
-    disabled: PropTypes.bool
+    rating: PropTypes.number
 }
 
 export default Rating;

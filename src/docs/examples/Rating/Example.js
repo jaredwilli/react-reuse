@@ -6,6 +6,8 @@ function Example() {
     return (
         <div>
             <Rating />
+            <br />
+            <Rating rating="2" />
         </div>
     );
 };

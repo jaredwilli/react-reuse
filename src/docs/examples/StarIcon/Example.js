@@ -6,6 +6,10 @@ import StarIcon from 'react-reuse/StarIcon';
 function Example() {
     return (
         <div>
+            <StarIcon size={20} />
+            <StarIcon fillType="half" fill="#29292A" size={20} />
+            <StarIcon fillType="full" fill="#29292A" size={20} />
+            <br />
             <StarIcon />
             <StarIcon fillType="half" fill="#29292A" />
             <StarIcon fillType="full" fill="#29292A" />

@@ -8,4 +8,10 @@ describe('StarIcon', () => {
         const tree = renderer.create(<StarIcon />).toJSON();
         expect(tree).toMatchSnapshot();
     });
+
+    // TODO: test the size prop more
+    it('renders the component correctly', () => {
+        const tree = renderer.create(<StarIcon size={20} />).toJSON();
+        expect(tree).toMatchSnapshot();
+    });
 });

@@ -17,6 +17,8 @@ class Rating extends React.Component {
     }
 
     onClick = rating => {
+        if (this.props.rating) return;
+
         this.setState({
             rating: rating,
             tempRating: rating
@@ -24,6 +26,8 @@ class Rating extends React.Component {
     };
 
     onMouseOver = rating => {
+        if (this.props.rating) return;
+
         this.setState({
             rating: rating,
             tempRating: this.state.rating
@@ -31,6 +35,8 @@ class Rating extends React.Component {
     };
 
     onMouseOut = () => {
+        if (this.props.rating) return;
+
         this.setState({
             rating: this.state.tempRating
         });
@@ -59,7 +65,10 @@ class Rating extends React.Component {
                     onClick={() => this.onClick(i)}
                     onMouseOver={() => this.onMouseOver(i)}
                     onMouseOut={() => this.onMouseOut()}>
-                    <StarIcon fillType={fillType} fill={fill} />
+                    <StarIcon
+                        fillType={fillType}
+                        fill={fill}
+                        size={this.props.size} />
                 </a>
             );
         }
@@ -69,6 +78,9 @@ class Rating extends React.Component {
 }
 
 Rating.propTypes = {
+    /** The size of the stars in the rating component */
+    size: PropTypes.number,
+
     /** The rating scale number for how many stars */
     scale: PropTypes.number,
 
@@ -77,6 +89,7 @@ Rating.propTypes = {
 };
 
 Rating.defaultProps = {
+    size: 32,
     scale: 5,
     rating: null
 };

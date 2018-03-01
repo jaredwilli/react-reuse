@@ -3,13 +3,13 @@ import PropTypes from 'prop-types';
 
 /** Star Icon component for the atom of a star rating component */
 
-const StarIcon = ({ fillType, fill, stroke }) => {
+const StarIcon = ({ fillType, fill, stroke, size }) => {
     return (
         <svg id="star-icon"
             className="star-icon"
             xmlns="http://www.w3.org/2000/svg"
-            width="32"
-            height="32"
+            width={size}
+            height={size}
             viewBox="0 0 32 32">
             <path className="full"
                 d="M15.25,22.08l-8,4.24,1.53-9L2.25,11l9-.12,4-9.36,4,9.36,9,.12-6.5,6.36,1.53,9Z"
@@ -26,6 +26,9 @@ const StarIcon = ({ fillType, fill, stroke }) => {
 };
 
 StarIcon.propTypes = {
+    /** The size of the star */
+    size: PropTypes.number,
+
     /** The stroke color for the border of each star */
     stroke: PropTypes.string,
 
@@ -37,6 +40,7 @@ StarIcon.propTypes = {
 };
 
 StarIcon.defaultProps = {
+    size: 32,
     stroke: '#29292A',
     fill: 'transparent',
     fillType: null

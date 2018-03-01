@@ -2,628 +2,684 @@
 
 exports[`Rating renders the component correctly 1`] = `
 <div
-  className="star-rating"
+  className="reviews-rating"
 >
-  <a
-    className="star-link"
-    onClick={[Function]}
-    onMouseOut={[Function]}
-    onMouseOver={[Function]}
+  <span
+    className="star-rating"
   >
-    <svg
-      className="star-icon"
-      height={32}
-      id="star-icon"
-      viewBox="0 0 32 32"
-      width={32}
-      xmlns="http://www.w3.org/2000/svg"
+    <a
+      className="star-link"
+      onClick={[Function]}
+      onMouseOut={[Function]}
+      onMouseOver={[Function]}
+      style={
+        Object {
+          "cursor": "pointer",
+        }
+      }
     >
-      <path
-        className="full"
-        d="M15.25,22.08l-8,4.24,1.53-9L2.25,11l9-.12,4-9.36,4,9.36,9,.12-6.5,6.36,1.53,9Z"
-        fill="transparent"
-        stroke="#29292A"
-        transform="translate(-1.04 -0.23)"
-      />
-      <path
-        className="half"
-        d="M15.25,22.08l-8,4.24,1.53-9L2.25,11l9-.12,4-9.36Z"
-        fill="transparent"
-        stroke="transparent"
-        transform="translate(-1.04 -0.23)"
-      />
-    </svg>
-  </a>
-  <a
-    className="star-link"
-    onClick={[Function]}
-    onMouseOut={[Function]}
-    onMouseOver={[Function]}
-  >
-    <svg
-      className="star-icon"
-      height={32}
-      id="star-icon"
-      viewBox="0 0 32 32"
-      width={32}
-      xmlns="http://www.w3.org/2000/svg"
+      <svg
+        className="star-icon"
+        height={32}
+        id="star-icon"
+        viewBox="0 0 32 32"
+        width={32}
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          className="full"
+          d="M15.25,22.08l-8,4.24,1.53-9L2.25,11l9-.12,4-9.36,4,9.36,9,.12-6.5,6.36,1.53,9Z"
+          fill="transparent"
+          stroke="#29292A"
+          transform="translate(-1.04 -0.23)"
+        />
+        <path
+          className="half"
+          d="M15.25,22.08l-8,4.24,1.53-9L2.25,11l9-.12,4-9.36Z"
+          fill="transparent"
+          stroke="transparent"
+          transform="translate(-1.04 -0.23)"
+        />
+      </svg>
+    </a>
+    <a
+      className="star-link"
+      onClick={[Function]}
+      onMouseOut={[Function]}
+      onMouseOver={[Function]}
+      style={
+        Object {
+          "cursor": "pointer",
+        }
+      }
     >
-      <path
-        className="full"
-        d="M15.25,22.08l-8,4.24,1.53-9L2.25,11l9-.12,4-9.36,4,9.36,9,.12-6.5,6.36,1.53,9Z"
-        fill="transparent"
-        stroke="#29292A"
-        transform="translate(-1.04 -0.23)"
-      />
-      <path
-        className="half"
-        d="M15.25,22.08l-8,4.24,1.53-9L2.25,11l9-.12,4-9.36Z"
-        fill="transparent"
-        stroke="transparent"
-        transform="translate(-1.04 -0.23)"
-      />
-    </svg>
-  </a>
-  <a
-    className="star-link"
-    onClick={[Function]}
-    onMouseOut={[Function]}
-    onMouseOver={[Function]}
-  >
-    <svg
-      className="star-icon"
-      height={32}
-      id="star-icon"
-      viewBox="0 0 32 32"
-      width={32}
-      xmlns="http://www.w3.org/2000/svg"
+      <svg
+        className="star-icon"
+        height={32}
+        id="star-icon"
+        viewBox="0 0 32 32"
+        width={32}
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          className="full"
+          d="M15.25,22.08l-8,4.24,1.53-9L2.25,11l9-.12,4-9.36,4,9.36,9,.12-6.5,6.36,1.53,9Z"
+          fill="transparent"
+          stroke="#29292A"
+          transform="translate(-1.04 -0.23)"
+        />
+        <path
+          className="half"
+          d="M15.25,22.08l-8,4.24,1.53-9L2.25,11l9-.12,4-9.36Z"
+          fill="transparent"
+          stroke="transparent"
+          transform="translate(-1.04 -0.23)"
+        />
+      </svg>
+    </a>
+    <a
+      className="star-link"
+      onClick={[Function]}
+      onMouseOut={[Function]}
+      onMouseOver={[Function]}
+      style={
+        Object {
+          "cursor": "pointer",
+        }
+      }
     >
-      <path
-        className="full"
-        d="M15.25,22.08l-8,4.24,1.53-9L2.25,11l9-.12,4-9.36,4,9.36,9,.12-6.5,6.36,1.53,9Z"
-        fill="transparent"
-        stroke="#29292A"
-        transform="translate(-1.04 -0.23)"
-      />
-      <path
-        className="half"
-        d="M15.25,22.08l-8,4.24,1.53-9L2.25,11l9-.12,4-9.36Z"
-        fill="transparent"
-        stroke="transparent"
-        transform="translate(-1.04 -0.23)"
-      />
-    </svg>
-  </a>
-  <a
-    className="star-link"
-    onClick={[Function]}
-    onMouseOut={[Function]}
-    onMouseOver={[Function]}
-  >
-    <svg
-      className="star-icon"
-      height={32}
-      id="star-icon"
-      viewBox="0 0 32 32"
-      width={32}
-      xmlns="http://www.w3.org/2000/svg"
+      <svg
+        className="star-icon"
+        height={32}
+        id="star-icon"
+        viewBox="0 0 32 32"
+        width={32}
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          className="full"
+          d="M15.25,22.08l-8,4.24,1.53-9L2.25,11l9-.12,4-9.36,4,9.36,9,.12-6.5,6.36,1.53,9Z"
+          fill="transparent"
+          stroke="#29292A"
+          transform="translate(-1.04 -0.23)"
+        />
+        <path
+          className="half"
+          d="M15.25,22.08l-8,4.24,1.53-9L2.25,11l9-.12,4-9.36Z"
+          fill="transparent"
+          stroke="transparent"
+          transform="translate(-1.04 -0.23)"
+        />
+      </svg>
+    </a>
+    <a
+      className="star-link"
+      onClick={[Function]}
+      onMouseOut={[Function]}
+      onMouseOver={[Function]}
+      style={
+        Object {
+          "cursor": "pointer",
+        }
+      }
     >
-      <path
-        className="full"
-        d="M15.25,22.08l-8,4.24,1.53-9L2.25,11l9-.12,4-9.36,4,9.36,9,.12-6.5,6.36,1.53,9Z"
-        fill="transparent"
-        stroke="#29292A"
-        transform="translate(-1.04 -0.23)"
-      />
-      <path
-        className="half"
-        d="M15.25,22.08l-8,4.24,1.53-9L2.25,11l9-.12,4-9.36Z"
-        fill="transparent"
-        stroke="transparent"
-        transform="translate(-1.04 -0.23)"
-      />
-    </svg>
-  </a>
-  <a
-    className="star-link"
-    onClick={[Function]}
-    onMouseOut={[Function]}
-    onMouseOver={[Function]}
-  >
-    <svg
-      className="star-icon"
-      height={32}
-      id="star-icon"
-      viewBox="0 0 32 32"
-      width={32}
-      xmlns="http://www.w3.org/2000/svg"
+      <svg
+        className="star-icon"
+        height={32}
+        id="star-icon"
+        viewBox="0 0 32 32"
+        width={32}
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          className="full"
+          d="M15.25,22.08l-8,4.24,1.53-9L2.25,11l9-.12,4-9.36,4,9.36,9,.12-6.5,6.36,1.53,9Z"
+          fill="transparent"
+          stroke="#29292A"
+          transform="translate(-1.04 -0.23)"
+        />
+        <path
+          className="half"
+          d="M15.25,22.08l-8,4.24,1.53-9L2.25,11l9-.12,4-9.36Z"
+          fill="transparent"
+          stroke="transparent"
+          transform="translate(-1.04 -0.23)"
+        />
+      </svg>
+    </a>
+    <a
+      className="star-link"
+      onClick={[Function]}
+      onMouseOut={[Function]}
+      onMouseOver={[Function]}
+      style={
+        Object {
+          "cursor": "pointer",
+        }
+      }
     >
-      <path
-        className="full"
-        d="M15.25,22.08l-8,4.24,1.53-9L2.25,11l9-.12,4-9.36,4,9.36,9,.12-6.5,6.36,1.53,9Z"
-        fill="transparent"
-        stroke="#29292A"
-        transform="translate(-1.04 -0.23)"
-      />
-      <path
-        className="half"
-        d="M15.25,22.08l-8,4.24,1.53-9L2.25,11l9-.12,4-9.36Z"
-        fill="transparent"
-        stroke="transparent"
-        transform="translate(-1.04 -0.23)"
-      />
-    </svg>
-  </a>
+      <svg
+        className="star-icon"
+        height={32}
+        id="star-icon"
+        viewBox="0 0 32 32"
+        width={32}
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          className="full"
+          d="M15.25,22.08l-8,4.24,1.53-9L2.25,11l9-.12,4-9.36,4,9.36,9,.12-6.5,6.36,1.53,9Z"
+          fill="transparent"
+          stroke="#29292A"
+          transform="translate(-1.04 -0.23)"
+        />
+        <path
+          className="half"
+          d="M15.25,22.08l-8,4.24,1.53-9L2.25,11l9-.12,4-9.36Z"
+          fill="transparent"
+          stroke="transparent"
+          transform="translate(-1.04 -0.23)"
+        />
+      </svg>
+    </a>
+  </span>
 </div>
 `;
 
 exports[`Rating renders with a default rating half value 1`] = `
 <div
-  className="star-rating"
+  className="reviews-rating"
 >
-  <a
-    className="star-link"
-    onClick={[Function]}
-    onMouseOut={[Function]}
-    onMouseOver={[Function]}
+  <span
+    className="star-rating"
   >
-    <svg
-      className="star-icon"
-      height={32}
-      id="star-icon"
-      viewBox="0 0 32 32"
-      width={32}
-      xmlns="http://www.w3.org/2000/svg"
+    <a
+      className="star-link"
+      onClick={[Function]}
+      onMouseOut={[Function]}
+      onMouseOver={[Function]}
+      style={Object {}}
     >
-      <path
-        className="full"
-        d="M15.25,22.08l-8,4.24,1.53-9L2.25,11l9-.12,4-9.36,4,9.36,9,.12-6.5,6.36,1.53,9Z"
-        fill="transparent"
-        stroke="#29292A"
-        transform="translate(-1.04 -0.23)"
-      />
-      <path
-        className="half"
-        d="M15.25,22.08l-8,4.24,1.53-9L2.25,11l9-.12,4-9.36Z"
-        fill="#29292A"
-        stroke="transparent"
-        transform="translate(-1.04 -0.23)"
-      />
-    </svg>
-  </a>
-  <a
-    className="star-link"
-    onClick={[Function]}
-    onMouseOut={[Function]}
-    onMouseOver={[Function]}
-  >
-    <svg
-      className="star-icon"
-      height={32}
-      id="star-icon"
-      viewBox="0 0 32 32"
-      width={32}
-      xmlns="http://www.w3.org/2000/svg"
+      <svg
+        className="star-icon"
+        height={32}
+        id="star-icon"
+        viewBox="0 0 32 32"
+        width={32}
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          className="full"
+          d="M15.25,22.08l-8,4.24,1.53-9L2.25,11l9-.12,4-9.36,4,9.36,9,.12-6.5,6.36,1.53,9Z"
+          fill="transparent"
+          stroke="#29292A"
+          transform="translate(-1.04 -0.23)"
+        />
+        <path
+          className="half"
+          d="M15.25,22.08l-8,4.24,1.53-9L2.25,11l9-.12,4-9.36Z"
+          fill="#29292A"
+          stroke="transparent"
+          transform="translate(-1.04 -0.23)"
+        />
+      </svg>
+    </a>
+    <a
+      className="star-link"
+      onClick={[Function]}
+      onMouseOut={[Function]}
+      onMouseOver={[Function]}
+      style={Object {}}
     >
-      <path
-        className="full"
-        d="M15.25,22.08l-8,4.24,1.53-9L2.25,11l9-.12,4-9.36,4,9.36,9,.12-6.5,6.36,1.53,9Z"
-        fill="transparent"
-        stroke="#29292A"
-        transform="translate(-1.04 -0.23)"
-      />
-      <path
-        className="half"
-        d="M15.25,22.08l-8,4.24,1.53-9L2.25,11l9-.12,4-9.36Z"
-        fill="transparent"
-        stroke="transparent"
-        transform="translate(-1.04 -0.23)"
-      />
-    </svg>
-  </a>
-  <a
-    className="star-link"
-    onClick={[Function]}
-    onMouseOut={[Function]}
-    onMouseOver={[Function]}
-  >
-    <svg
-      className="star-icon"
-      height={32}
-      id="star-icon"
-      viewBox="0 0 32 32"
-      width={32}
-      xmlns="http://www.w3.org/2000/svg"
+      <svg
+        className="star-icon"
+        height={32}
+        id="star-icon"
+        viewBox="0 0 32 32"
+        width={32}
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          className="full"
+          d="M15.25,22.08l-8,4.24,1.53-9L2.25,11l9-.12,4-9.36,4,9.36,9,.12-6.5,6.36,1.53,9Z"
+          fill="transparent"
+          stroke="#29292A"
+          transform="translate(-1.04 -0.23)"
+        />
+        <path
+          className="half"
+          d="M15.25,22.08l-8,4.24,1.53-9L2.25,11l9-.12,4-9.36Z"
+          fill="transparent"
+          stroke="transparent"
+          transform="translate(-1.04 -0.23)"
+        />
+      </svg>
+    </a>
+    <a
+      className="star-link"
+      onClick={[Function]}
+      onMouseOut={[Function]}
+      onMouseOver={[Function]}
+      style={Object {}}
     >
-      <path
-        className="full"
-        d="M15.25,22.08l-8,4.24,1.53-9L2.25,11l9-.12,4-9.36,4,9.36,9,.12-6.5,6.36,1.53,9Z"
-        fill="transparent"
-        stroke="#29292A"
-        transform="translate(-1.04 -0.23)"
-      />
-      <path
-        className="half"
-        d="M15.25,22.08l-8,4.24,1.53-9L2.25,11l9-.12,4-9.36Z"
-        fill="transparent"
-        stroke="transparent"
-        transform="translate(-1.04 -0.23)"
-      />
-    </svg>
-  </a>
-  <a
-    className="star-link"
-    onClick={[Function]}
-    onMouseOut={[Function]}
-    onMouseOver={[Function]}
-  >
-    <svg
-      className="star-icon"
-      height={32}
-      id="star-icon"
-      viewBox="0 0 32 32"
-      width={32}
-      xmlns="http://www.w3.org/2000/svg"
+      <svg
+        className="star-icon"
+        height={32}
+        id="star-icon"
+        viewBox="0 0 32 32"
+        width={32}
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          className="full"
+          d="M15.25,22.08l-8,4.24,1.53-9L2.25,11l9-.12,4-9.36,4,9.36,9,.12-6.5,6.36,1.53,9Z"
+          fill="transparent"
+          stroke="#29292A"
+          transform="translate(-1.04 -0.23)"
+        />
+        <path
+          className="half"
+          d="M15.25,22.08l-8,4.24,1.53-9L2.25,11l9-.12,4-9.36Z"
+          fill="transparent"
+          stroke="transparent"
+          transform="translate(-1.04 -0.23)"
+        />
+      </svg>
+    </a>
+    <a
+      className="star-link"
+      onClick={[Function]}
+      onMouseOut={[Function]}
+      onMouseOver={[Function]}
+      style={Object {}}
     >
-      <path
-        className="full"
-        d="M15.25,22.08l-8,4.24,1.53-9L2.25,11l9-.12,4-9.36,4,9.36,9,.12-6.5,6.36,1.53,9Z"
-        fill="transparent"
-        stroke="#29292A"
-        transform="translate(-1.04 -0.23)"
-      />
-      <path
-        className="half"
-        d="M15.25,22.08l-8,4.24,1.53-9L2.25,11l9-.12,4-9.36Z"
-        fill="transparent"
-        stroke="transparent"
-        transform="translate(-1.04 -0.23)"
-      />
-    </svg>
-  </a>
-  <a
-    className="star-link"
-    onClick={[Function]}
-    onMouseOut={[Function]}
-    onMouseOver={[Function]}
-  >
-    <svg
-      className="star-icon"
-      height={32}
-      id="star-icon"
-      viewBox="0 0 32 32"
-      width={32}
-      xmlns="http://www.w3.org/2000/svg"
+      <svg
+        className="star-icon"
+        height={32}
+        id="star-icon"
+        viewBox="0 0 32 32"
+        width={32}
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          className="full"
+          d="M15.25,22.08l-8,4.24,1.53-9L2.25,11l9-.12,4-9.36,4,9.36,9,.12-6.5,6.36,1.53,9Z"
+          fill="transparent"
+          stroke="#29292A"
+          transform="translate(-1.04 -0.23)"
+        />
+        <path
+          className="half"
+          d="M15.25,22.08l-8,4.24,1.53-9L2.25,11l9-.12,4-9.36Z"
+          fill="transparent"
+          stroke="transparent"
+          transform="translate(-1.04 -0.23)"
+        />
+      </svg>
+    </a>
+    <a
+      className="star-link"
+      onClick={[Function]}
+      onMouseOut={[Function]}
+      onMouseOver={[Function]}
+      style={Object {}}
     >
-      <path
-        className="full"
-        d="M15.25,22.08l-8,4.24,1.53-9L2.25,11l9-.12,4-9.36,4,9.36,9,.12-6.5,6.36,1.53,9Z"
-        fill="transparent"
-        stroke="#29292A"
-        transform="translate(-1.04 -0.23)"
-      />
-      <path
-        className="half"
-        d="M15.25,22.08l-8,4.24,1.53-9L2.25,11l9-.12,4-9.36Z"
-        fill="transparent"
-        stroke="transparent"
-        transform="translate(-1.04 -0.23)"
-      />
-    </svg>
-  </a>
+      <svg
+        className="star-icon"
+        height={32}
+        id="star-icon"
+        viewBox="0 0 32 32"
+        width={32}
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          className="full"
+          d="M15.25,22.08l-8,4.24,1.53-9L2.25,11l9-.12,4-9.36,4,9.36,9,.12-6.5,6.36,1.53,9Z"
+          fill="transparent"
+          stroke="#29292A"
+          transform="translate(-1.04 -0.23)"
+        />
+        <path
+          className="half"
+          d="M15.25,22.08l-8,4.24,1.53-9L2.25,11l9-.12,4-9.36Z"
+          fill="transparent"
+          stroke="transparent"
+          transform="translate(-1.04 -0.23)"
+        />
+      </svg>
+    </a>
+  </span>
 </div>
 `;
 
 exports[`Rating renders with a default rating half value and size prop 1`] = `
 <div
-  className="star-rating"
+  className="reviews-rating"
 >
-  <a
-    className="star-link"
-    onClick={[Function]}
-    onMouseOut={[Function]}
-    onMouseOver={[Function]}
+  <span
+    className="star-rating"
   >
-    <svg
-      className="star-icon"
-      height={20}
-      id="star-icon"
-      viewBox="0 0 32 32"
-      width={20}
-      xmlns="http://www.w3.org/2000/svg"
+    <a
+      className="star-link"
+      onClick={[Function]}
+      onMouseOut={[Function]}
+      onMouseOver={[Function]}
+      style={Object {}}
     >
-      <path
-        className="full"
-        d="M15.25,22.08l-8,4.24,1.53-9L2.25,11l9-.12,4-9.36,4,9.36,9,.12-6.5,6.36,1.53,9Z"
-        fill="transparent"
-        stroke="#29292A"
-        transform="translate(-1.04 -0.23)"
-      />
-      <path
-        className="half"
-        d="M15.25,22.08l-8,4.24,1.53-9L2.25,11l9-.12,4-9.36Z"
-        fill="#29292A"
-        stroke="transparent"
-        transform="translate(-1.04 -0.23)"
-      />
-    </svg>
-  </a>
-  <a
-    className="star-link"
-    onClick={[Function]}
-    onMouseOut={[Function]}
-    onMouseOver={[Function]}
-  >
-    <svg
-      className="star-icon"
-      height={20}
-      id="star-icon"
-      viewBox="0 0 32 32"
-      width={20}
-      xmlns="http://www.w3.org/2000/svg"
+      <svg
+        className="star-icon"
+        height={20}
+        id="star-icon"
+        viewBox="0 0 32 32"
+        width={20}
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          className="full"
+          d="M15.25,22.08l-8,4.24,1.53-9L2.25,11l9-.12,4-9.36,4,9.36,9,.12-6.5,6.36,1.53,9Z"
+          fill="transparent"
+          stroke="#29292A"
+          transform="translate(-1.04 -0.23)"
+        />
+        <path
+          className="half"
+          d="M15.25,22.08l-8,4.24,1.53-9L2.25,11l9-.12,4-9.36Z"
+          fill="#29292A"
+          stroke="transparent"
+          transform="translate(-1.04 -0.23)"
+        />
+      </svg>
+    </a>
+    <a
+      className="star-link"
+      onClick={[Function]}
+      onMouseOut={[Function]}
+      onMouseOver={[Function]}
+      style={Object {}}
     >
-      <path
-        className="full"
-        d="M15.25,22.08l-8,4.24,1.53-9L2.25,11l9-.12,4-9.36,4,9.36,9,.12-6.5,6.36,1.53,9Z"
-        fill="transparent"
-        stroke="#29292A"
-        transform="translate(-1.04 -0.23)"
-      />
-      <path
-        className="half"
-        d="M15.25,22.08l-8,4.24,1.53-9L2.25,11l9-.12,4-9.36Z"
-        fill="transparent"
-        stroke="transparent"
-        transform="translate(-1.04 -0.23)"
-      />
-    </svg>
-  </a>
-  <a
-    className="star-link"
-    onClick={[Function]}
-    onMouseOut={[Function]}
-    onMouseOver={[Function]}
-  >
-    <svg
-      className="star-icon"
-      height={20}
-      id="star-icon"
-      viewBox="0 0 32 32"
-      width={20}
-      xmlns="http://www.w3.org/2000/svg"
+      <svg
+        className="star-icon"
+        height={20}
+        id="star-icon"
+        viewBox="0 0 32 32"
+        width={20}
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          className="full"
+          d="M15.25,22.08l-8,4.24,1.53-9L2.25,11l9-.12,4-9.36,4,9.36,9,.12-6.5,6.36,1.53,9Z"
+          fill="transparent"
+          stroke="#29292A"
+          transform="translate(-1.04 -0.23)"
+        />
+        <path
+          className="half"
+          d="M15.25,22.08l-8,4.24,1.53-9L2.25,11l9-.12,4-9.36Z"
+          fill="transparent"
+          stroke="transparent"
+          transform="translate(-1.04 -0.23)"
+        />
+      </svg>
+    </a>
+    <a
+      className="star-link"
+      onClick={[Function]}
+      onMouseOut={[Function]}
+      onMouseOver={[Function]}
+      style={Object {}}
     >
-      <path
-        className="full"
-        d="M15.25,22.08l-8,4.24,1.53-9L2.25,11l9-.12,4-9.36,4,9.36,9,.12-6.5,6.36,1.53,9Z"
-        fill="transparent"
-        stroke="#29292A"
-        transform="translate(-1.04 -0.23)"
-      />
-      <path
-        className="half"
-        d="M15.25,22.08l-8,4.24,1.53-9L2.25,11l9-.12,4-9.36Z"
-        fill="transparent"
-        stroke="transparent"
-        transform="translate(-1.04 -0.23)"
-      />
-    </svg>
-  </a>
-  <a
-    className="star-link"
-    onClick={[Function]}
-    onMouseOut={[Function]}
-    onMouseOver={[Function]}
-  >
-    <svg
-      className="star-icon"
-      height={20}
-      id="star-icon"
-      viewBox="0 0 32 32"
-      width={20}
-      xmlns="http://www.w3.org/2000/svg"
+      <svg
+        className="star-icon"
+        height={20}
+        id="star-icon"
+        viewBox="0 0 32 32"
+        width={20}
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          className="full"
+          d="M15.25,22.08l-8,4.24,1.53-9L2.25,11l9-.12,4-9.36,4,9.36,9,.12-6.5,6.36,1.53,9Z"
+          fill="transparent"
+          stroke="#29292A"
+          transform="translate(-1.04 -0.23)"
+        />
+        <path
+          className="half"
+          d="M15.25,22.08l-8,4.24,1.53-9L2.25,11l9-.12,4-9.36Z"
+          fill="transparent"
+          stroke="transparent"
+          transform="translate(-1.04 -0.23)"
+        />
+      </svg>
+    </a>
+    <a
+      className="star-link"
+      onClick={[Function]}
+      onMouseOut={[Function]}
+      onMouseOver={[Function]}
+      style={Object {}}
     >
-      <path
-        className="full"
-        d="M15.25,22.08l-8,4.24,1.53-9L2.25,11l9-.12,4-9.36,4,9.36,9,.12-6.5,6.36,1.53,9Z"
-        fill="transparent"
-        stroke="#29292A"
-        transform="translate(-1.04 -0.23)"
-      />
-      <path
-        className="half"
-        d="M15.25,22.08l-8,4.24,1.53-9L2.25,11l9-.12,4-9.36Z"
-        fill="transparent"
-        stroke="transparent"
-        transform="translate(-1.04 -0.23)"
-      />
-    </svg>
-  </a>
-  <a
-    className="star-link"
-    onClick={[Function]}
-    onMouseOut={[Function]}
-    onMouseOver={[Function]}
-  >
-    <svg
-      className="star-icon"
-      height={20}
-      id="star-icon"
-      viewBox="0 0 32 32"
-      width={20}
-      xmlns="http://www.w3.org/2000/svg"
+      <svg
+        className="star-icon"
+        height={20}
+        id="star-icon"
+        viewBox="0 0 32 32"
+        width={20}
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          className="full"
+          d="M15.25,22.08l-8,4.24,1.53-9L2.25,11l9-.12,4-9.36,4,9.36,9,.12-6.5,6.36,1.53,9Z"
+          fill="transparent"
+          stroke="#29292A"
+          transform="translate(-1.04 -0.23)"
+        />
+        <path
+          className="half"
+          d="M15.25,22.08l-8,4.24,1.53-9L2.25,11l9-.12,4-9.36Z"
+          fill="transparent"
+          stroke="transparent"
+          transform="translate(-1.04 -0.23)"
+        />
+      </svg>
+    </a>
+    <a
+      className="star-link"
+      onClick={[Function]}
+      onMouseOut={[Function]}
+      onMouseOver={[Function]}
+      style={Object {}}
     >
-      <path
-        className="full"
-        d="M15.25,22.08l-8,4.24,1.53-9L2.25,11l9-.12,4-9.36,4,9.36,9,.12-6.5,6.36,1.53,9Z"
-        fill="transparent"
-        stroke="#29292A"
-        transform="translate(-1.04 -0.23)"
-      />
-      <path
-        className="half"
-        d="M15.25,22.08l-8,4.24,1.53-9L2.25,11l9-.12,4-9.36Z"
-        fill="transparent"
-        stroke="transparent"
-        transform="translate(-1.04 -0.23)"
-      />
-    </svg>
-  </a>
+      <svg
+        className="star-icon"
+        height={20}
+        id="star-icon"
+        viewBox="0 0 32 32"
+        width={20}
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          className="full"
+          d="M15.25,22.08l-8,4.24,1.53-9L2.25,11l9-.12,4-9.36,4,9.36,9,.12-6.5,6.36,1.53,9Z"
+          fill="transparent"
+          stroke="#29292A"
+          transform="translate(-1.04 -0.23)"
+        />
+        <path
+          className="half"
+          d="M15.25,22.08l-8,4.24,1.53-9L2.25,11l9-.12,4-9.36Z"
+          fill="transparent"
+          stroke="transparent"
+          transform="translate(-1.04 -0.23)"
+        />
+      </svg>
+    </a>
+  </span>
 </div>
 `;
 
 exports[`Rating renders with a default rating value 1`] = `
 <div
-  className="star-rating"
+  className="reviews-rating"
 >
-  <a
-    className="star-link"
-    onClick={[Function]}
-    onMouseOut={[Function]}
-    onMouseOver={[Function]}
+  <span
+    className="star-rating"
   >
-    <svg
-      className="star-icon"
-      height={32}
-      id="star-icon"
-      viewBox="0 0 32 32"
-      width={32}
-      xmlns="http://www.w3.org/2000/svg"
+    <a
+      className="star-link"
+      onClick={[Function]}
+      onMouseOut={[Function]}
+      onMouseOver={[Function]}
+      style={Object {}}
     >
-      <path
-        className="full"
-        d="M15.25,22.08l-8,4.24,1.53-9L2.25,11l9-.12,4-9.36,4,9.36,9,.12-6.5,6.36,1.53,9Z"
-        fill="#29292A"
-        stroke="#29292A"
-        transform="translate(-1.04 -0.23)"
-      />
-      <path
-        className="half"
-        d="M15.25,22.08l-8,4.24,1.53-9L2.25,11l9-.12,4-9.36Z"
-        fill="transparent"
-        stroke="transparent"
-        transform="translate(-1.04 -0.23)"
-      />
-    </svg>
-  </a>
-  <a
-    className="star-link"
-    onClick={[Function]}
-    onMouseOut={[Function]}
-    onMouseOver={[Function]}
-  >
-    <svg
-      className="star-icon"
-      height={32}
-      id="star-icon"
-      viewBox="0 0 32 32"
-      width={32}
-      xmlns="http://www.w3.org/2000/svg"
+      <svg
+        className="star-icon"
+        height={32}
+        id="star-icon"
+        viewBox="0 0 32 32"
+        width={32}
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          className="full"
+          d="M15.25,22.08l-8,4.24,1.53-9L2.25,11l9-.12,4-9.36,4,9.36,9,.12-6.5,6.36,1.53,9Z"
+          fill="#29292A"
+          stroke="#29292A"
+          transform="translate(-1.04 -0.23)"
+        />
+        <path
+          className="half"
+          d="M15.25,22.08l-8,4.24,1.53-9L2.25,11l9-.12,4-9.36Z"
+          fill="transparent"
+          stroke="transparent"
+          transform="translate(-1.04 -0.23)"
+        />
+      </svg>
+    </a>
+    <a
+      className="star-link"
+      onClick={[Function]}
+      onMouseOut={[Function]}
+      onMouseOver={[Function]}
+      style={Object {}}
     >
-      <path
-        className="full"
-        d="M15.25,22.08l-8,4.24,1.53-9L2.25,11l9-.12,4-9.36,4,9.36,9,.12-6.5,6.36,1.53,9Z"
-        fill="#29292A"
-        stroke="#29292A"
-        transform="translate(-1.04 -0.23)"
-      />
-      <path
-        className="half"
-        d="M15.25,22.08l-8,4.24,1.53-9L2.25,11l9-.12,4-9.36Z"
-        fill="transparent"
-        stroke="transparent"
-        transform="translate(-1.04 -0.23)"
-      />
-    </svg>
-  </a>
-  <a
-    className="star-link"
-    onClick={[Function]}
-    onMouseOut={[Function]}
-    onMouseOver={[Function]}
-  >
-    <svg
-      className="star-icon"
-      height={32}
-      id="star-icon"
-      viewBox="0 0 32 32"
-      width={32}
-      xmlns="http://www.w3.org/2000/svg"
+      <svg
+        className="star-icon"
+        height={32}
+        id="star-icon"
+        viewBox="0 0 32 32"
+        width={32}
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          className="full"
+          d="M15.25,22.08l-8,4.24,1.53-9L2.25,11l9-.12,4-9.36,4,9.36,9,.12-6.5,6.36,1.53,9Z"
+          fill="#29292A"
+          stroke="#29292A"
+          transform="translate(-1.04 -0.23)"
+        />
+        <path
+          className="half"
+          d="M15.25,22.08l-8,4.24,1.53-9L2.25,11l9-.12,4-9.36Z"
+          fill="transparent"
+          stroke="transparent"
+          transform="translate(-1.04 -0.23)"
+        />
+      </svg>
+    </a>
+    <a
+      className="star-link"
+      onClick={[Function]}
+      onMouseOut={[Function]}
+      onMouseOver={[Function]}
+      style={Object {}}
     >
-      <path
-        className="full"
-        d="M15.25,22.08l-8,4.24,1.53-9L2.25,11l9-.12,4-9.36,4,9.36,9,.12-6.5,6.36,1.53,9Z"
-        fill="transparent"
-        stroke="#29292A"
-        transform="translate(-1.04 -0.23)"
-      />
-      <path
-        className="half"
-        d="M15.25,22.08l-8,4.24,1.53-9L2.25,11l9-.12,4-9.36Z"
-        fill="transparent"
-        stroke="transparent"
-        transform="translate(-1.04 -0.23)"
-      />
-    </svg>
-  </a>
-  <a
-    className="star-link"
-    onClick={[Function]}
-    onMouseOut={[Function]}
-    onMouseOver={[Function]}
-  >
-    <svg
-      className="star-icon"
-      height={32}
-      id="star-icon"
-      viewBox="0 0 32 32"
-      width={32}
-      xmlns="http://www.w3.org/2000/svg"
+      <svg
+        className="star-icon"
+        height={32}
+        id="star-icon"
+        viewBox="0 0 32 32"
+        width={32}
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          className="full"
+          d="M15.25,22.08l-8,4.24,1.53-9L2.25,11l9-.12,4-9.36,4,9.36,9,.12-6.5,6.36,1.53,9Z"
+          fill="transparent"
+          stroke="#29292A"
+          transform="translate(-1.04 -0.23)"
+        />
+        <path
+          className="half"
+          d="M15.25,22.08l-8,4.24,1.53-9L2.25,11l9-.12,4-9.36Z"
+          fill="transparent"
+          stroke="transparent"
+          transform="translate(-1.04 -0.23)"
+        />
+      </svg>
+    </a>
+    <a
+      className="star-link"
+      onClick={[Function]}
+      onMouseOut={[Function]}
+      onMouseOver={[Function]}
+      style={Object {}}
     >
-      <path
-        className="full"
-        d="M15.25,22.08l-8,4.24,1.53-9L2.25,11l9-.12,4-9.36,4,9.36,9,.12-6.5,6.36,1.53,9Z"
-        fill="transparent"
-        stroke="#29292A"
-        transform="translate(-1.04 -0.23)"
-      />
-      <path
-        className="half"
-        d="M15.25,22.08l-8,4.24,1.53-9L2.25,11l9-.12,4-9.36Z"
-        fill="transparent"
-        stroke="transparent"
-        transform="translate(-1.04 -0.23)"
-      />
-    </svg>
-  </a>
-  <a
-    className="star-link"
-    onClick={[Function]}
-    onMouseOut={[Function]}
-    onMouseOver={[Function]}
-  >
-    <svg
-      className="star-icon"
-      height={32}
-      id="star-icon"
-      viewBox="0 0 32 32"
-      width={32}
-      xmlns="http://www.w3.org/2000/svg"
+      <svg
+        className="star-icon"
+        height={32}
+        id="star-icon"
+        viewBox="0 0 32 32"
+        width={32}
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          className="full"
+          d="M15.25,22.08l-8,4.24,1.53-9L2.25,11l9-.12,4-9.36,4,9.36,9,.12-6.5,6.36,1.53,9Z"
+          fill="transparent"
+          stroke="#29292A"
+          transform="translate(-1.04 -0.23)"
+        />
+        <path
+          className="half"
+          d="M15.25,22.08l-8,4.24,1.53-9L2.25,11l9-.12,4-9.36Z"
+          fill="transparent"
+          stroke="transparent"
+          transform="translate(-1.04 -0.23)"
+        />
+      </svg>
+    </a>
+    <a
+      className="star-link"
+      onClick={[Function]}
+      onMouseOut={[Function]}
+      onMouseOver={[Function]}
+      style={Object {}}
     >
-      <path
-        className="full"
-        d="M15.25,22.08l-8,4.24,1.53-9L2.25,11l9-.12,4-9.36,4,9.36,9,.12-6.5,6.36,1.53,9Z"
-        fill="transparent"
-        stroke="#29292A"
-        transform="translate(-1.04 -0.23)"
-      />
-      <path
-        className="half"
-        d="M15.25,22.08l-8,4.24,1.53-9L2.25,11l9-.12,4-9.36Z"
-        fill="transparent"
-        stroke="transparent"
-        transform="translate(-1.04 -0.23)"
-      />
-    </svg>
-  </a>
+      <svg
+        className="star-icon"
+        height={32}
+        id="star-icon"
+        viewBox="0 0 32 32"
+        width={32}
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          className="full"
+          d="M15.25,22.08l-8,4.24,1.53-9L2.25,11l9-.12,4-9.36,4,9.36,9,.12-6.5,6.36,1.53,9Z"
+          fill="transparent"
+          stroke="#29292A"
+          transform="translate(-1.04 -0.23)"
+        />
+        <path
+          className="half"
+          d="M15.25,22.08l-8,4.24,1.53-9L2.25,11l9-.12,4-9.36Z"
+          fill="transparent"
+          stroke="transparent"
+          transform="translate(-1.04 -0.23)"
+        />
+      </svg>
+    </a>
+  </span>
 </div>
 `;

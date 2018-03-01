@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styles from './Rating.css';
+
+import StarIcon from '../StarIcon';
 
 import './Rating.css';
 
@@ -15,27 +16,23 @@ class Rating extends React.Component {
     };
   }
 
-  rate = rating => {
+  onClick = rating => {
     this.setState({
       rating: rating,
       tempRating: rating
     });
   }
 
-  starOver = rating => {
-    this.state.tempRating = this.state.rating;
-    this.state.rating = rating;
-
+  onMouseOver = rating => {
     this.setState({
-      rating: this.state.rating,
-      tempRating: this.state.tempRating
+        rating: rating,
+        tempRating: this.state.rating
     });
   }
 
-  starOut = () => {
-    this.state.rating = this.state.tempRating;
+  onMouseOut = () => {
     this.setState({
-        rating: this.state.rating
+        rating: this.state.tempRating
     });
   }
 
@@ -43,20 +40,20 @@ class Rating extends React.Component {
       let stars = [];
 
       for (let i = 0; i < 5; i++) {
-          let className = 'star';
+          let fillType = '';
 
           if (this.state.rating >= i && this.state.rating !== null) {
-              className += ' is-selected';
+              fillType = 'full';
             }
 
             stars.push(
-                <label
-                    className={className}
-                    onClick={() => this.rate(i)}
-                    onMouseOver={() => this.starOver(i)}
-                    onMouseOut={() => this.starOut()}>
-                    ★
-                </label>
+                <a key={i}
+                    className="star-link"
+                    onClick={() => this.onClick(i)}
+                    onMouseOver={() => this.onMouseOver(i)}
+                    onMouseOut={() => this.onMouseOut()}>
+                    <StarIcon fillType={fillType} fill="#29292A" />
+                </a>
             );
         }
 
@@ -69,6 +66,9 @@ class Rating extends React.Component {
 }
 
 Rating.propTypes = {
+    /** The rating value to set initially if needed */
+    rating: PropTypes.number,
+
     /** Disable star rating component */
     disabled: PropTypes.bool
 }

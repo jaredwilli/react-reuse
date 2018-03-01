@@ -1,0 +1,158 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Rating hides password quality by default 1`] = `
+<div
+  className="star-rating"
+>
+  <a
+    className="star-link"
+    onClick={[Function]}
+    onMouseOut={[Function]}
+    onMouseOver={[Function]}
+  >
+    <svg
+      className="star-icon"
+      height="32"
+      id="star-icon"
+      viewBox="0 0 32 32"
+      width="32"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        className="full"
+        d="M15.25,22.08l-8,4.24,1.53-9L2.25,11l9-.12,4-9.36,4,9.36,9,.12-6.5,6.36,1.53,9Z"
+        fill="transparent"
+        stroke="#29292A"
+        transform="translate(-1.04 -0.23)"
+      />
+      <path
+        className="half"
+        d="M15.25,22.08l-8,4.24,1.53-9L2.25,11l9-.12,4-9.36Z"
+        fill="transparent"
+        stroke="transparent"
+        transform="translate(-1.04 -0.23)"
+      />
+    </svg>
+  </a>
+  <a
+    className="star-link"
+    onClick={[Function]}
+    onMouseOut={[Function]}
+    onMouseOver={[Function]}
+  >
+    <svg
+      className="star-icon"
+      height="32"
+      id="star-icon"
+      viewBox="0 0 32 32"
+      width="32"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        className="full"
+        d="M15.25,22.08l-8,4.24,1.53-9L2.25,11l9-.12,4-9.36,4,9.36,9,.12-6.5,6.36,1.53,9Z"
+        fill="transparent"
+        stroke="#29292A"
+        transform="translate(-1.04 -0.23)"
+      />
+      <path
+        className="half"
+        d="M15.25,22.08l-8,4.24,1.53-9L2.25,11l9-.12,4-9.36Z"
+        fill="transparent"
+        stroke="transparent"
+        transform="translate(-1.04 -0.23)"
+      />
+    </svg>
+  </a>
+  <a
+    className="star-link"
+    onClick={[Function]}
+    onMouseOut={[Function]}
+    onMouseOver={[Function]}
+  >
+    <svg
+      className="star-icon"
+      height="32"
+      id="star-icon"
+      viewBox="0 0 32 32"
+      width="32"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        className="full"
+        d="M15.25,22.08l-8,4.24,1.53-9L2.25,11l9-.12,4-9.36,4,9.36,9,.12-6.5,6.36,1.53,9Z"
+        fill="transparent"
+        stroke="#29292A"
+        transform="translate(-1.04 -0.23)"
+      />
+      <path
+        className="half"
+        d="M15.25,22.08l-8,4.24,1.53-9L2.25,11l9-.12,4-9.36Z"
+        fill="transparent"
+        stroke="transparent"
+        transform="translate(-1.04 -0.23)"
+      />
+    </svg>
+  </a>
+  <a
+    className="star-link"
+    onClick={[Function]}
+    onMouseOut={[Function]}
+    onMouseOver={[Function]}
+  >
+    <svg
+      className="star-icon"
+      height="32"
+      id="star-icon"
+      viewBox="0 0 32 32"
+      width="32"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        className="full"
+        d="M15.25,22.08l-8,4.24,1.53-9L2.25,11l9-.12,4-9.36,4,9.36,9,.12-6.5,6.36,1.53,9Z"
+        fill="transparent"
+        stroke="#29292A"
+        transform="translate(-1.04 -0.23)"
+      />
+      <path
+        className="half"
+        d="M15.25,22.08l-8,4.24,1.53-9L2.25,11l9-.12,4-9.36Z"
+        fill="transparent"
+        stroke="transparent"
+        transform="translate(-1.04 -0.23)"
+      />
+    </svg>
+  </a>
+  <a
+    className="star-link"
+    onClick={[Function]}
+    onMouseOut={[Function]}
+    onMouseOver={[Function]}
+  >
+    <svg
+      className="star-icon"
+      height="32"
+      id="star-icon"
+      viewBox="0 0 32 32"
+      width="32"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        className="full"
+        d="M15.25,22.08l-8,4.24,1.53-9L2.25,11l9-.12,4-9.36,4,9.36,9,.12-6.5,6.36,1.53,9Z"
+        fill="transparent"
+        stroke="#29292A"
+        transform="translate(-1.04 -0.23)"
+      />
+      <path
+        className="half"
+        d="M15.25,22.08l-8,4.24,1.53-9L2.25,11l9-.12,4-9.36Z"
+        fill="transparent"
+        stroke="transparent"
+        transform="translate(-1.04 -0.23)"
+      />
+    </svg>
+  </a>
+</div>
+`;

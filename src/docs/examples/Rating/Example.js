@@ -1,7 +1,10 @@
 import React from 'react';
 import Rating from 'react-reuse/Rating';
 
-/** Various examples of star rating showing different props being set to output different style components. */
+/**
+ * Various examples of star rating showing different props being set to output different style components.
+ * */
+
 function Example() {
     return (
         <div>

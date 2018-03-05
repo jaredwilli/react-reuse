@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import DotIcon from '../DotIcon';
 
 import './LikertScale.css';
 
@@ -26,20 +25,19 @@ const LikertScale = props => {
         } else if (i === valueArr.length) {
             valueArr[i] = 100;
         } else {
-            if (i === (valueArr.length - 1) / 2) {
-            }
-
             valueArr[i] = 100 / (valueArr.length - 1) * i
         }
     }
 
-
+    // Calculate the left position for the big black dot
     const dotStyle = {
-        left: `${valueArr[valueIndex] - (100/35)}%`
+        left: `${valueArr[valueIndex] - 2.5}%`
     };
 
     return (
-        <div className="likert-scale">
+        <div className="likert-scale" style={{ width: props.width }}>
+            <div className="label">{props.value.label}</div>
+
             <div className="dot-points">
                 {valueArr.map((val, index) => {
                     const label = labelArrs[props.value.dimensionLabel.toLowerCase()];
@@ -68,11 +66,11 @@ LikertScale.propTypes = {
     options: PropTypes.array.isRequired,
 
     /** The list of scale options for setting the values of the dot points */
-    width: PropTypes.number
+    width: PropTypes.string
 };
 
 LikertScale.defaultProps = {
-    width: 300
+    width: '100%'
 };
 
 export default LikertScale;

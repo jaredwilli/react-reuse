@@ -1,49 +1,56 @@
 .likert-scale {
     display: inline-block;
     position: relative;
-    height: 40px;
-}
+    height: 80px;
+  }
 
-.scale-dots {
+  .likert-scale .label {
+    font-size: 14px;
+    font-family: BrownStd, sans-serif, Arial;
+    text-transform: lowercase;
+    margin-bottom: 8px;
     position: relative;
-    top: -8px;
-    width: 300px;
-}
+    left: -5px;
+  }
 
-.likert-scale .line {
+  .likert-scale .label::first-letter {
+    text-transform: capitalize;
+  }
+
+  .likert-scale .line {
     background: #959595;
     position: relative;
     top: 6px;
-    height: 2px;
+    height: 1px;
     z-index: 0;
-}
+  }
 
-.likert-scale .dot {
+  .likert-scale .dot {
     background: #29292a;
     border-radius: 100%;
     display: inline-block;
     position: absolute;
-    top: -1px;
-    width: 15px;
-    height: 15px;
-    z-index: 1;
-}
-
-.likert-scale .dot-points {
-    position: relative;
-    left: -6px;
-    top: 2px;
-}
-
-.likert-scale .small-dot {
-    background: #959595;
-    border-radius: 100%;
+    top: 25.66px;
     width: 10px;
     height: 10px;
-    position: absolute;
-}
+    z-index: 1;
+  }
 
-.likert-scale .small-dot span {
+  .likert-scale .dot-points {
+    position: relative;
+    left: -3px;
+    top: 4px;
+  }
+
+  .likert-scale .small-dot {
+    background: #959595;
+    border-radius: 100%;
+    width: 5px;
+    height: 5px;
+    position: absolute;
+  }
+
+  .likert-scale .small-dot span {
     color: #797979;
     font-size: 12px;
     font-family: BrownStd, sans-serif, Arial;
@@ -51,13 +58,13 @@
     top: 15px;
     left: -25px;
     width: 75px;
-}
+  }
 
-.likert-scale .small-dot:first-child span {
+  .likert-scale .small-dot:first-child span {
     left: 0;
-}
-.likert-scale .small-dot:last-child span {
+  }
+  .likert-scale .small-dot:last-child span {
     text-align: right;
-    left: initial;
     right: 0;
-}
+    left: initial;
+  }

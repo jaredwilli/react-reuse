@@ -57,19 +57,19 @@ function Example() {
 
     return (
         <div>
-            <LikertScale value={values[0]} options={SIZE_OPTIONS} />
+            <LikertScale value={values[0]} options={SIZE_OPTIONS} width="300px" />
             <br />
             <br />
-            <LikertScale value={values[1]} options={SIZE_OPTIONS} />
+            <LikertScale value={values[1]} options={SIZE_OPTIONS} width="300px" />
             <br />
             <br />
-            <LikertScale value={values[2]} options={SIZE_OPTIONS} />
+            <LikertScale value={values[2]} options={SIZE_OPTIONS} width="300px" />
             <br />
             <br />
-            <LikertScale value={values[3]} options={WIDTH_OPTIONS} />
+            <LikertScale value={values[3]} options={WIDTH_OPTIONS} width="300px" />
             <br />
             <br />
-            <LikertScale value={values[4]} options={WIDTH_OPTIONS} />
+            <LikertScale value={values[4]} options={WIDTH_OPTIONS} width="300px" />
         </div>
     );
 };

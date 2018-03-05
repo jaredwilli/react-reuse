@@ -3,7 +3,17 @@
 exports[`LikertScale renders the component correctly 1`] = `
 <div
   className="likert-scale"
+  style={
+    Object {
+      "width": "100%",
+    }
+  }
 >
+  <div
+    className="label"
+  >
+    Felt True to Size
+  </div>
   <div
     className="dot-points"
   >
@@ -64,7 +74,7 @@ exports[`LikertScale renders the component correctly 1`] = `
     className="dot"
     style={
       Object {
-        "left": "47.142857142857146%",
+        "left": "47.5%",
       }
     }
   />
@@ -72,7 +82,7 @@ exports[`LikertScale renders the component correctly 1`] = `
     className="line"
     style={
       Object {
-        "width": 300,
+        "width": "100%",
       }
     }
   />
@@ -82,7 +92,17 @@ exports[`LikertScale renders the component correctly 1`] = `
 exports[`LikertScale renders the component correctly 2`] = `
 <div
   className="likert-scale"
+  style={
+    Object {
+      "width": "100%",
+    }
+  }
 >
+  <div
+    className="label"
+  >
+    Felt Full Size Smaller
+  </div>
   <div
     className="dot-points"
   >
@@ -143,7 +163,7 @@ exports[`LikertScale renders the component correctly 2`] = `
     className="dot"
     style={
       Object {
-        "left": "-2.857142857142857%",
+        "left": "-2.5%",
       }
     }
   />
@@ -151,7 +171,7 @@ exports[`LikertScale renders the component correctly 2`] = `
     className="line"
     style={
       Object {
-        "width": 300,
+        "width": "100%",
       }
     }
   />
@@ -161,7 +181,17 @@ exports[`LikertScale renders the component correctly 2`] = `
 exports[`LikertScale renders the component correctly 3`] = `
 <div
   className="likert-scale"
+  style={
+    Object {
+      "width": "100%",
+    }
+  }
 >
+  <div
+    className="label"
+  >
+    Felt Half Size Larger
+  </div>
   <div
     className="dot-points"
   >
@@ -222,7 +252,7 @@ exports[`LikertScale renders the component correctly 3`] = `
     className="dot"
     style={
       Object {
-        "left": "72.14285714285714%",
+        "left": "72.5%",
       }
     }
   />
@@ -230,7 +260,7 @@ exports[`LikertScale renders the component correctly 3`] = `
     className="line"
     style={
       Object {
-        "width": 300,
+        "width": "100%",
       }
     }
   />
@@ -240,7 +270,17 @@ exports[`LikertScale renders the component correctly 3`] = `
 exports[`LikertScale renders the component correctly 4`] = `
 <div
   className="likert-scale"
+  style={
+    Object {
+      "width": "100%",
+    }
+  }
 >
+  <div
+    className="label"
+  >
+    Felt Slightly Narrow
+  </div>
   <div
     className="dot-points"
   >
@@ -301,7 +341,7 @@ exports[`LikertScale renders the component correctly 4`] = `
     className="dot"
     style={
       Object {
-        "left": "22.142857142857142%",
+        "left": "22.5%",
       }
     }
   />
@@ -309,7 +349,7 @@ exports[`LikertScale renders the component correctly 4`] = `
     className="line"
     style={
       Object {
-        "width": 300,
+        "width": "100%",
       }
     }
   />
@@ -319,7 +359,17 @@ exports[`LikertScale renders the component correctly 4`] = `
 exports[`LikertScale renders the component correctly 5`] = `
 <div
   className="likert-scale"
+  style={
+    Object {
+      "width": "100%",
+    }
+  }
 >
+  <div
+    className="label"
+  >
+    Felt Wide
+  </div>
   <div
     className="dot-points"
   >
@@ -380,7 +430,7 @@ exports[`LikertScale renders the component correctly 5`] = `
     className="dot"
     style={
       Object {
-        "left": "97.14285714285714%",
+        "left": "97.5%",
       }
     }
   />
@@ -388,402 +438,7 @@ exports[`LikertScale renders the component correctly 5`] = `
     className="line"
     style={
       Object {
-        "width": 300,
-      }
-    }
-  />
-</div>
-`;
-
-exports[`LikertScale renders the component correctly for size 1`] = `
-<div
-  className="likert-scale"
->
-  <div
-    className="dot-points"
-  >
-    <div
-      className="small-dot"
-      style={
-        Object {
-          "left": "0%",
-        }
-      }
-    >
-      <span>
-        Runs Small
-      </span>
-    </div>
-    <div
-      className="small-dot"
-      style={
-        Object {
-          "left": "25%",
-        }
-      }
-    />
-    <div
-      className="small-dot"
-      style={
-        Object {
-          "left": "50%",
-        }
-      }
-    >
-      <span>
-        True to Size
-      </span>
-    </div>
-    <div
-      className="small-dot"
-      style={
-        Object {
-          "left": "75%",
-        }
-      }
-    />
-    <div
-      className="small-dot"
-      style={
-        Object {
-          "left": "100%",
-        }
-      }
-    >
-      <span>
-        Runs Large
-      </span>
-    </div>
-  </div>
-  <div
-    className="dot"
-    style={
-      Object {
-        "left": "47.142857142857146%",
-      }
-    }
-  />
-  <div
-    className="line"
-    style={
-      Object {
-        "width": 300,
-      }
-    }
-  />
-</div>
-`;
-
-exports[`LikertScale renders the component correctly for size 2`] = `
-<div
-  className="likert-scale"
->
-  <div
-    className="dot-points"
-  >
-    <div
-      className="small-dot"
-      style={
-        Object {
-          "left": "0%",
-        }
-      }
-    >
-      <span>
-        Runs Small
-      </span>
-    </div>
-    <div
-      className="small-dot"
-      style={
-        Object {
-          "left": "25%",
-        }
-      }
-    />
-    <div
-      className="small-dot"
-      style={
-        Object {
-          "left": "50%",
-        }
-      }
-    >
-      <span>
-        True to Size
-      </span>
-    </div>
-    <div
-      className="small-dot"
-      style={
-        Object {
-          "left": "75%",
-        }
-      }
-    />
-    <div
-      className="small-dot"
-      style={
-        Object {
-          "left": "100%",
-        }
-      }
-    >
-      <span>
-        Runs Large
-      </span>
-    </div>
-  </div>
-  <div
-    className="dot"
-    style={
-      Object {
-        "left": "-2.857142857142857%",
-      }
-    }
-  />
-  <div
-    className="line"
-    style={
-      Object {
-        "width": 300,
-      }
-    }
-  />
-</div>
-`;
-
-exports[`LikertScale renders the component correctly for size 3`] = `
-<div
-  className="likert-scale"
->
-  <div
-    className="dot-points"
-  >
-    <div
-      className="small-dot"
-      style={
-        Object {
-          "left": "0%",
-        }
-      }
-    >
-      <span>
-        Runs Small
-      </span>
-    </div>
-    <div
-      className="small-dot"
-      style={
-        Object {
-          "left": "25%",
-        }
-      }
-    />
-    <div
-      className="small-dot"
-      style={
-        Object {
-          "left": "50%",
-        }
-      }
-    >
-      <span>
-        True to Size
-      </span>
-    </div>
-    <div
-      className="small-dot"
-      style={
-        Object {
-          "left": "75%",
-        }
-      }
-    />
-    <div
-      className="small-dot"
-      style={
-        Object {
-          "left": "100%",
-        }
-      }
-    >
-      <span>
-        Runs Large
-      </span>
-    </div>
-  </div>
-  <div
-    className="dot"
-    style={
-      Object {
-        "left": "72.14285714285714%",
-      }
-    }
-  />
-  <div
-    className="line"
-    style={
-      Object {
-        "width": 300,
-      }
-    }
-  />
-</div>
-`;
-
-exports[`LikertScale renders the component correctly for size 4`] = `
-<div
-  className="likert-scale"
->
-  <div
-    className="dot-points"
-  >
-    <div
-      className="small-dot"
-      style={
-        Object {
-          "left": "0%",
-        }
-      }
-    >
-      <span>
-        Runs Narrow
-      </span>
-    </div>
-    <div
-      className="small-dot"
-      style={
-        Object {
-          "left": "25%",
-        }
-      }
-    />
-    <div
-      className="small-dot"
-      style={
-        Object {
-          "left": "50%",
-        }
-      }
-    >
-      <span>
-        True to Width
-      </span>
-    </div>
-    <div
-      className="small-dot"
-      style={
-        Object {
-          "left": "75%",
-        }
-      }
-    />
-    <div
-      className="small-dot"
-      style={
-        Object {
-          "left": "100%",
-        }
-      }
-    >
-      <span>
-        Runs Wide
-      </span>
-    </div>
-  </div>
-  <div
-    className="dot"
-    style={
-      Object {
-        "left": "22.142857142857142%",
-      }
-    }
-  />
-  <div
-    className="line"
-    style={
-      Object {
-        "width": 300,
-      }
-    }
-  />
-</div>
-`;
-
-exports[`LikertScale renders the component correctly for size 5`] = `
-<div
-  className="likert-scale"
->
-  <div
-    className="dot-points"
-  >
-    <div
-      className="small-dot"
-      style={
-        Object {
-          "left": "0%",
-        }
-      }
-    >
-      <span>
-        Runs Narrow
-      </span>
-    </div>
-    <div
-      className="small-dot"
-      style={
-        Object {
-          "left": "25%",
-        }
-      }
-    />
-    <div
-      className="small-dot"
-      style={
-        Object {
-          "left": "50%",
-        }
-      }
-    >
-      <span>
-        True to Width
-      </span>
-    </div>
-    <div
-      className="small-dot"
-      style={
-        Object {
-          "left": "75%",
-        }
-      }
-    />
-    <div
-      className="small-dot"
-      style={
-        Object {
-          "left": "100%",
-        }
-      }
-    >
-      <span>
-        Runs Wide
-      </span>
-    </div>
-  </div>
-  <div
-    className="dot"
-    style={
-      Object {
-        "left": "97.14285714285714%",
-      }
-    }
-  />
-  <div
-    className="line"
-    style={
-      Object {
-        "width": 300,
+        "width": "100%",
       }
     }
   />

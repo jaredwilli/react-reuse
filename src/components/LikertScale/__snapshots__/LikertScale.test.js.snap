@@ -1,0 +1,791 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LikertScale renders the component correctly 1`] = `
+<div
+  className="likert-scale"
+>
+  <div
+    className="dot-points"
+  >
+    <div
+      className="small-dot"
+      style={
+        Object {
+          "left": "0%",
+        }
+      }
+    >
+      <span>
+        Runs Small
+      </span>
+    </div>
+    <div
+      className="small-dot"
+      style={
+        Object {
+          "left": "25%",
+        }
+      }
+    />
+    <div
+      className="small-dot"
+      style={
+        Object {
+          "left": "50%",
+        }
+      }
+    >
+      <span>
+        True to Size
+      </span>
+    </div>
+    <div
+      className="small-dot"
+      style={
+        Object {
+          "left": "75%",
+        }
+      }
+    />
+    <div
+      className="small-dot"
+      style={
+        Object {
+          "left": "100%",
+        }
+      }
+    >
+      <span>
+        Runs Large
+      </span>
+    </div>
+  </div>
+  <div
+    className="dot"
+    style={
+      Object {
+        "left": "47.142857142857146%",
+      }
+    }
+  />
+  <div
+    className="line"
+    style={
+      Object {
+        "width": 300,
+      }
+    }
+  />
+</div>
+`;
+
+exports[`LikertScale renders the component correctly 2`] = `
+<div
+  className="likert-scale"
+>
+  <div
+    className="dot-points"
+  >
+    <div
+      className="small-dot"
+      style={
+        Object {
+          "left": "0%",
+        }
+      }
+    >
+      <span>
+        Runs Small
+      </span>
+    </div>
+    <div
+      className="small-dot"
+      style={
+        Object {
+          "left": "25%",
+        }
+      }
+    />
+    <div
+      className="small-dot"
+      style={
+        Object {
+          "left": "50%",
+        }
+      }
+    >
+      <span>
+        True to Size
+      </span>
+    </div>
+    <div
+      className="small-dot"
+      style={
+        Object {
+          "left": "75%",
+        }
+      }
+    />
+    <div
+      className="small-dot"
+      style={
+        Object {
+          "left": "100%",
+        }
+      }
+    >
+      <span>
+        Runs Large
+      </span>
+    </div>
+  </div>
+  <div
+    className="dot"
+    style={
+      Object {
+        "left": "-2.857142857142857%",
+      }
+    }
+  />
+  <div
+    className="line"
+    style={
+      Object {
+        "width": 300,
+      }
+    }
+  />
+</div>
+`;
+
+exports[`LikertScale renders the component correctly 3`] = `
+<div
+  className="likert-scale"
+>
+  <div
+    className="dot-points"
+  >
+    <div
+      className="small-dot"
+      style={
+        Object {
+          "left": "0%",
+        }
+      }
+    >
+      <span>
+        Runs Small
+      </span>
+    </div>
+    <div
+      className="small-dot"
+      style={
+        Object {
+          "left": "25%",
+        }
+      }
+    />
+    <div
+      className="small-dot"
+      style={
+        Object {
+          "left": "50%",
+        }
+      }
+    >
+      <span>
+        True to Size
+      </span>
+    </div>
+    <div
+      className="small-dot"
+      style={
+        Object {
+          "left": "75%",
+        }
+      }
+    />
+    <div
+      className="small-dot"
+      style={
+        Object {
+          "left": "100%",
+        }
+      }
+    >
+      <span>
+        Runs Large
+      </span>
+    </div>
+  </div>
+  <div
+    className="dot"
+    style={
+      Object {
+        "left": "72.14285714285714%",
+      }
+    }
+  />
+  <div
+    className="line"
+    style={
+      Object {
+        "width": 300,
+      }
+    }
+  />
+</div>
+`;
+
+exports[`LikertScale renders the component correctly 4`] = `
+<div
+  className="likert-scale"
+>
+  <div
+    className="dot-points"
+  >
+    <div
+      className="small-dot"
+      style={
+        Object {
+          "left": "0%",
+        }
+      }
+    >
+      <span>
+        Runs Narrow
+      </span>
+    </div>
+    <div
+      className="small-dot"
+      style={
+        Object {
+          "left": "25%",
+        }
+      }
+    />
+    <div
+      className="small-dot"
+      style={
+        Object {
+          "left": "50%",
+        }
+      }
+    >
+      <span>
+        True to Width
+      </span>
+    </div>
+    <div
+      className="small-dot"
+      style={
+        Object {
+          "left": "75%",
+        }
+      }
+    />
+    <div
+      className="small-dot"
+      style={
+        Object {
+          "left": "100%",
+        }
+      }
+    >
+      <span>
+        Runs Wide
+      </span>
+    </div>
+  </div>
+  <div
+    className="dot"
+    style={
+      Object {
+        "left": "22.142857142857142%",
+      }
+    }
+  />
+  <div
+    className="line"
+    style={
+      Object {
+        "width": 300,
+      }
+    }
+  />
+</div>
+`;
+
+exports[`LikertScale renders the component correctly 5`] = `
+<div
+  className="likert-scale"
+>
+  <div
+    className="dot-points"
+  >
+    <div
+      className="small-dot"
+      style={
+        Object {
+          "left": "0%",
+        }
+      }
+    >
+      <span>
+        Runs Narrow
+      </span>
+    </div>
+    <div
+      className="small-dot"
+      style={
+        Object {
+          "left": "25%",
+        }
+      }
+    />
+    <div
+      className="small-dot"
+      style={
+        Object {
+          "left": "50%",
+        }
+      }
+    >
+      <span>
+        True to Width
+      </span>
+    </div>
+    <div
+      className="small-dot"
+      style={
+        Object {
+          "left": "75%",
+        }
+      }
+    />
+    <div
+      className="small-dot"
+      style={
+        Object {
+          "left": "100%",
+        }
+      }
+    >
+      <span>
+        Runs Wide
+      </span>
+    </div>
+  </div>
+  <div
+    className="dot"
+    style={
+      Object {
+        "left": "97.14285714285714%",
+      }
+    }
+  />
+  <div
+    className="line"
+    style={
+      Object {
+        "width": 300,
+      }
+    }
+  />
+</div>
+`;
+
+exports[`LikertScale renders the component correctly for size 1`] = `
+<div
+  className="likert-scale"
+>
+  <div
+    className="dot-points"
+  >
+    <div
+      className="small-dot"
+      style={
+        Object {
+          "left": "0%",
+        }
+      }
+    >
+      <span>
+        Runs Small
+      </span>
+    </div>
+    <div
+      className="small-dot"
+      style={
+        Object {
+          "left": "25%",
+        }
+      }
+    />
+    <div
+      className="small-dot"
+      style={
+        Object {
+          "left": "50%",
+        }
+      }
+    >
+      <span>
+        True to Size
+      </span>
+    </div>
+    <div
+      className="small-dot"
+      style={
+        Object {
+          "left": "75%",
+        }
+      }
+    />
+    <div
+      className="small-dot"
+      style={
+        Object {
+          "left": "100%",
+        }
+      }
+    >
+      <span>
+        Runs Large
+      </span>
+    </div>
+  </div>
+  <div
+    className="dot"
+    style={
+      Object {
+        "left": "47.142857142857146%",
+      }
+    }
+  />
+  <div
+    className="line"
+    style={
+      Object {
+        "width": 300,
+      }
+    }
+  />
+</div>
+`;
+
+exports[`LikertScale renders the component correctly for size 2`] = `
+<div
+  className="likert-scale"
+>
+  <div
+    className="dot-points"
+  >
+    <div
+      className="small-dot"
+      style={
+        Object {
+          "left": "0%",
+        }
+      }
+    >
+      <span>
+        Runs Small
+      </span>
+    </div>
+    <div
+      className="small-dot"
+      style={
+        Object {
+          "left": "25%",
+        }
+      }
+    />
+    <div
+      className="small-dot"
+      style={
+        Object {
+          "left": "50%",
+        }
+      }
+    >
+      <span>
+        True to Size
+      </span>
+    </div>
+    <div
+      className="small-dot"
+      style={
+        Object {
+          "left": "75%",
+        }
+      }
+    />
+    <div
+      className="small-dot"
+      style={
+        Object {
+          "left": "100%",
+        }
+      }
+    >
+      <span>
+        Runs Large
+      </span>
+    </div>
+  </div>
+  <div
+    className="dot"
+    style={
+      Object {
+        "left": "-2.857142857142857%",
+      }
+    }
+  />
+  <div
+    className="line"
+    style={
+      Object {
+        "width": 300,
+      }
+    }
+  />
+</div>
+`;
+
+exports[`LikertScale renders the component correctly for size 3`] = `
+<div
+  className="likert-scale"
+>
+  <div
+    className="dot-points"
+  >
+    <div
+      className="small-dot"
+      style={
+        Object {
+          "left": "0%",
+        }
+      }
+    >
+      <span>
+        Runs Small
+      </span>
+    </div>
+    <div
+      className="small-dot"
+      style={
+        Object {
+          "left": "25%",
+        }
+      }
+    />
+    <div
+      className="small-dot"
+      style={
+        Object {
+          "left": "50%",
+        }
+      }
+    >
+      <span>
+        True to Size
+      </span>
+    </div>
+    <div
+      className="small-dot"
+      style={
+        Object {
+          "left": "75%",
+        }
+      }
+    />
+    <div
+      className="small-dot"
+      style={
+        Object {
+          "left": "100%",
+        }
+      }
+    >
+      <span>
+        Runs Large
+      </span>
+    </div>
+  </div>
+  <div
+    className="dot"
+    style={
+      Object {
+        "left": "72.14285714285714%",
+      }
+    }
+  />
+  <div
+    className="line"
+    style={
+      Object {
+        "width": 300,
+      }
+    }
+  />
+</div>
+`;
+
+exports[`LikertScale renders the component correctly for size 4`] = `
+<div
+  className="likert-scale"
+>
+  <div
+    className="dot-points"
+  >
+    <div
+      className="small-dot"
+      style={
+        Object {
+          "left": "0%",
+        }
+      }
+    >
+      <span>
+        Runs Narrow
+      </span>
+    </div>
+    <div
+      className="small-dot"
+      style={
+        Object {
+          "left": "25%",
+        }
+      }
+    />
+    <div
+      className="small-dot"
+      style={
+        Object {
+          "left": "50%",
+        }
+      }
+    >
+      <span>
+        True to Width
+      </span>
+    </div>
+    <div
+      className="small-dot"
+      style={
+        Object {
+          "left": "75%",
+        }
+      }
+    />
+    <div
+      className="small-dot"
+      style={
+        Object {
+          "left": "100%",
+        }
+      }
+    >
+      <span>
+        Runs Wide
+      </span>
+    </div>
+  </div>
+  <div
+    className="dot"
+    style={
+      Object {
+        "left": "22.142857142857142%",
+      }
+    }
+  />
+  <div
+    className="line"
+    style={
+      Object {
+        "width": 300,
+      }
+    }
+  />
+</div>
+`;
+
+exports[`LikertScale renders the component correctly for size 5`] = `
+<div
+  className="likert-scale"
+>
+  <div
+    className="dot-points"
+  >
+    <div
+      className="small-dot"
+      style={
+        Object {
+          "left": "0%",
+        }
+      }
+    >
+      <span>
+        Runs Narrow
+      </span>
+    </div>
+    <div
+      className="small-dot"
+      style={
+        Object {
+          "left": "25%",
+        }
+      }
+    />
+    <div
+      className="small-dot"
+      style={
+        Object {
+          "left": "50%",
+        }
+      }
+    >
+      <span>
+        True to Width
+      </span>
+    </div>
+    <div
+      className="small-dot"
+      style={
+        Object {
+          "left": "75%",
+        }
+      }
+    />
+    <div
+      className="small-dot"
+      style={
+        Object {
+          "left": "100%",
+        }
+      }
+    >
+      <span>
+        Runs Wide
+      </span>
+    </div>
+  </div>
+  <div
+    className="dot"
+    style={
+      Object {
+        "left": "97.14285714285714%",
+      }
+    }
+  />
+  <div
+    className="line"
+    style={
+      Object {
+        "width": 300,
+      }
+    }
+  />
+</div>
+`;

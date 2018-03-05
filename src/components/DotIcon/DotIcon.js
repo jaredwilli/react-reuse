@@ -12,7 +12,7 @@ const DotIcon = props => (
             cy="3070"
             r="5"
             fill={props.fill}
-            fill-rule="evenodd"
+            fillRule="evenodd"
             transform="translate(-958 -3065)"
         />
     </svg>

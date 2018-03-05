@@ -46,8 +46,8 @@ class Pagination extends React.Component {
         this.props.onChangePage(pageOfItems);
     }
 
-    getPager = (totalItems, currentPage = 1, pageSize = 10) => {
-        const totalPages = Math.ceil(totalItems / pageSize);
+    getPager = (totalItems, currentPage = 1) => {
+        const totalPages = Math.ceil(totalItems / this.props.pageSize);
         let startPage, endPage;
 
         // TODO: Modify this so it works based on a prop numPagesToShow = 5
@@ -67,24 +67,24 @@ class Pagination extends React.Component {
                 startPage = currentPage - 5;
                 endPage = currentPage + 4;
             }
-
-            // Calculate start and end item indexes
-            const startIndex = (currentPage - 1) * pageSize;
-            const endIndex = Math.min(startIndex + pageSize - 1, totalItems - 1);
-            const pages = _.range(startPage, endPage + 1);
-
-            return {
-                totalPages,
-                currentPage,
-                pageSize,
-                totalItems,
-                startPage,
-                endPage,
-                startIndex,
-                endIndex,
-                pages
-            };
         }
+
+        // Calculate start and end item indexes
+        const startIndex = (currentPage - 1) * this.props.pageSize;
+        const endIndex = Math.min(startIndex + this.props.pageSize - 1, totalItems - 1);
+        const pages = _.range(startPage, endPage + 1);
+
+        return {
+            pageSize: this.props.pageSize,
+            totalPages,
+            currentPage,
+            totalItems,
+            startPage,
+            endPage,
+            startIndex,
+            endIndex,
+            pages
+        };
     }
 
     render() {
@@ -125,11 +125,14 @@ Pagination.propTypes = {
     /** The function to call when clicking the pagination buttons to change page */
     onChangePage: PropTypes.func.isRequired,
     /** The initial starting page */
-    initialPage: PropTypes.number
+    initialPage: PropTypes.number,
+    /** The number of items to show per page */
+    pageSize: PropTypes.number
 };
 
 Pagination.defaultProps = {
-    initialPage: 1
+    initialPage: 1,
+    pageSize: 10
 };
 
 export default Pagination;

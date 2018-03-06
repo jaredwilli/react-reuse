@@ -5,6 +5,15 @@ exports[`Pagination renders the component correctly 1`] = `
   className="pagination"
 >
   <li
+    className="disabled"
+  >
+    <a
+      onClick={[Function]}
+    >
+      First
+    </a>
+  </li>
+  <li
     className="active"
   >
     <a
@@ -101,6 +110,15 @@ exports[`Pagination renders the component correctly 1`] = `
       onClick={[Function]}
     >
       →
+    </a>
+  </li>
+  <li
+    className=""
+  >
+    <a
+      onClick={[Function]}
+    >
+      Last
     </a>
   </li>
 </ul>

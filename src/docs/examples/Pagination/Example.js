@@ -14,7 +14,7 @@ function Example() {
     return (
         <div>
             {/* <List items={this.state.pageOfItems} */}
-            <Pagination items={items} onChangePage={onChangePage} />
+            <Pagination items={items} onChangePage={onChangePage} pageSize={5} numPagesToShow={5} />
         </div>
     );
 };

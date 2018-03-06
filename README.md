@@ -30,8 +30,8 @@ Yarn helps to spead things up a bit, but I use npm as well.
 
 ## Clone && cd && yarn
 ```
-git clone git@github.com:jaredwilli/webernote-react.git
-cd webernote-react
+git clone git@github.com:jaredwilli/react-reuse.git
+cd react-reuse
 yarn
 ```
 

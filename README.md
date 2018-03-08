@@ -39,7 +39,7 @@ yarn
 
 `yarn start`
 
-_The app will be served on `(http://localhost:3000/)`.
+The app will be served on `(http://localhost:3000/)`.
 
 ## Building - Testing - Watching
 

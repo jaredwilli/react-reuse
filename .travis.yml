@@ -1,5 +1,10 @@
+# http://lint.travis-ci.org/
+sudo: true
+
 language: node_js
+
 node_js:
-  - "7"
-  - "8"
-  - "9"
+    "stable"
+
+cache:
+    directories: node_modules

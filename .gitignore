@@ -22,5 +22,5 @@ yarn-error.log*
 
 /Library
 /docs
-/congif/componentData.js
+/src/componentData.js
 launch.json

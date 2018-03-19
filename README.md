@@ -19,65 +19,18 @@
 A resuable component library for react that is self-documenting and automatically generating output for examples. We all just want to have a simple way to build features and reusable components that will generate documentation and create a list of real examples that you can interact with on an actual web page. This is what I've created here.
 
 
-
 -------
 
 ## Install
 
-Yarn helps to spead things up a bit, but I use npm as well.
-
-`brew install yarn`
-
-## Clone && cd && yarn
 ```
-git clone git@github.com:jaredwilli/react-reuse.git
-cd react-reuse
-yarn
+npm install react-reuse
 ```
 
-## Running Server:
-
-`yarn start`
-
-The app will be served on `(http://localhost:3000/)`.
-
-## Building - Testing - Watching
-
-This is still a Create React App unejected.
-But there are tons of cool things you can do
-
-### Building
-```
-yarn build
-```
-
-### Testing
-```
-yarn test  [-- --jsdom] [--coverage]
-```
-
-### Get a list of the npm scripts you can run.
-
-`yarn run`
-
-
---------
-
-
-## Prettier Configuration
-
-This app uses prettier to auto format the code on pre-commit. It also has a .prettierrc file for setting some defaults. It is recommended that you install Prettier in your code editor of choice and configure your workspace settings for it to be the same as what this project has defined.
-
-
-## Contributing
-
-Everyone is welcome, we can turn it into a really useful app together!
-Of course I am open to anyone looking to contribute. This app is kind of a what I use to build a real-world and production level and quality application using technologies I am not very familiar with so I can pick it up while building a pretty complex single-page-app.
-
-If you are interested in contributing to this project, check out the Issues page and choose from any of the various features, bugs, ideas and other things that you may want to give a shot to add, and open a Pull Request.
+# Docs
+[Component documentation](https://jaredwilli.github.io/react-reuse/)
 
 
 ## License
 
 [MIT License](https://opensource.org/licenses/MIT)
-

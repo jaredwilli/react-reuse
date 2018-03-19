@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Navigation from './Navigation';
 import ComponentPage from './ComponentPage.js';
-import componentData from '../../config/componentData';
+import componentData from '../../src/componentData';
 
 class Docs extends Component {
     constructor(props) {

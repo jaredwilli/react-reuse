@@ -26,6 +26,7 @@ class Docs extends Component {
             ? componentData.filter(component => component.name === route)[0]
             : componentData[0];
 
+
         return (
             <div className="docs">
                 <h1>React Reuse</h1>

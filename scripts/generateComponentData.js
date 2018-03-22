@@ -11,6 +11,7 @@ const paths = {
 };
 
 const enableWatchMode = process.argv.slice(2) == '--watch';
+
 if (enableWatchMode) {
     // Regenerate component data when components change
     chokidar
@@ -32,7 +33,7 @@ function generate(paths) {
                 return getComponentData(paths, componentName);
             } catch (error) {
                 errors.push(
-                    `An error occurred whil attemping to generate metadata for ${componentName}. ${error}`
+                    `An error occurred while attemping to generate metadata for ${componentName}. ${error}`
                 );
             }
         }
@@ -77,7 +78,8 @@ function getExampleData(examplesPath, componentName) {
 }
 
 function getExampleFiles(examplesPath, componentName) {
-    let exampleFiles = [];
+    let exampleFiles = [],
+        regex = new RegExp('.jsx?$');
 
     try {
         exampleFiles = getFiles(path.join(examplesPath, componentName));
@@ -85,7 +87,7 @@ function getExampleFiles(examplesPath, componentName) {
         console.log(chalk.red(`No examples found for ${componentName}.`));
     }
 
-    return exampleFiles;
+    return exampleFiles.filter(file => regex.text(file);
 }
 
 function getDirectories(filePath) {

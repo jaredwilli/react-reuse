@@ -63,7 +63,8 @@
             "build",
             "coverage",
             "scripts",
-            "src/componentData"
+            "src/componentData",
+            "index.js"
         ],
         "setupFiles": [
             "<rootDir>/config/polyfills.js"

@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TextInputCSSModules renders the component correctly 1`] = `
+<div
+  className={undefined}
+>
+  <label
+    htmlFor="test"
+    style={
+      Object {
+        "display": "block",
+      }
+    }
+  >
+    Test
+     
+  </label>
+  <input
+    className={undefined}
+    id="test"
+    name="Test"
+    onChange={[Function]}
+    placeholder={undefined}
+    type="text"
+    value={undefined}
+  />
+</div>
+`;

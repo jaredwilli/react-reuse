@@ -78,8 +78,7 @@ function getExampleData(examplesPath, componentName) {
 }
 
 function getExampleFiles(examplesPath, componentName) {
-    let exampleFiles = [],
-        regex = new RegExp('.jsx?$');
+    let exampleFiles = [];
 
     try {
         exampleFiles = getFiles(path.join(examplesPath, componentName));
@@ -87,7 +86,7 @@ function getExampleFiles(examplesPath, componentName) {
         console.log(chalk.red(`No examples found for ${componentName}.`));
     }
 
-    return exampleFiles.filter(file => regex.text(file);
+    return exampleFiles;
 }
 
 function getDirectories(filePath) {

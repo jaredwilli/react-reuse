@@ -5,20 +5,21 @@ exports[`TextInputCSSModules renders the component correctly 1`] = `
   className={undefined}
 >
   <label
-    htmlFor={undefined}
+    htmlFor="test"
     style={
       Object {
         "display": "block",
       }
     }
   >
+    Test
      
   </label>
   <input
     className={undefined}
-    id={undefined}
-    name={undefined}
-    onChange={undefined}
+    id="test"
+    name="Test"
+    onChange={[Function]}
     placeholder={undefined}
     type="text"
     value={undefined}

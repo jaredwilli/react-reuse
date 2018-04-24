@@ -1,9 +1,9 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 import { shallow } from 'enzyme';
-import TextInputCSSModules from './TextInputCSSModules';
+import TextInput from './TextInput';
 
-describe('TextInputCSSModules', () => {
+describe('TextInput', () => {
     const props = {
         htmlId: 'test',
         name: 'Test',
@@ -12,7 +12,7 @@ describe('TextInputCSSModules', () => {
     };
 
     it('renders the component correctly', () => {
-        const tree = renderer.create(<TextInputCSSModules {...props} />).toJSON();
+        const tree = renderer.create(<TextInput {...props} />).toJSON();
         expect(tree).toMatchSnapshot();
     });
 });

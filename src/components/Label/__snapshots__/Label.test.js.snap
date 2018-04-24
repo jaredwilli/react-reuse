@@ -2,13 +2,14 @@
 
 exports[`Label renders the component correctly 1`] = `
 <label
-  htmlFor={undefined}
+  htmlFor="test"
   style={
     Object {
       "display": "block",
     }
   }
 >
+  Test
    
 </label>
 `;

@@ -1,8 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`TextInputBEM renders the component correctly 1`] = `
+exports[`TextInput renders the component correctly 1`] = `
 <div
-  className="text-input"
+  style={
+    Object {
+      "marginBottom": 16,
+    }
+  }
 >
   <label
     htmlFor="test"
@@ -16,11 +20,11 @@ exports[`TextInputBEM renders the component correctly 1`] = `
      
   </label>
   <input
-    className={undefined}
     id="test"
     name="Test"
     onChange={[Function]}
     placeholder={undefined}
+    style={undefined}
     type="text"
     value={undefined}
   />

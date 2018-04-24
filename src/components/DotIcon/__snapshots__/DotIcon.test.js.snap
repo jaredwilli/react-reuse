@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DotIcon renders the component correctly 1`] = `
+<svg
+  height={5}
+  viewBox="0 0 10 10"
+  width={5}
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <circle
+    cx="963"
+    cy="3070"
+    fill="#959595"
+    fillRule="evenodd"
+    r="5"
+    transform="translate(-958 -3065)"
+  />
+</svg>
+`;

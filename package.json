@@ -29,6 +29,7 @@
         "toolkit"
     ],
     "dependencies": {
+        "codacy-coverage": "^2.1.1",
         "lodash": "^4.17.5",
         "prop-types": "^15.6.1",
         "react": "^16.2.0",
@@ -42,6 +43,7 @@
         "gen:docs": "node scripts/generateComponentData.js",
         "gen:docs-watch": "npm run gen:docs -- --watch",
         "test": "node scripts/test.js --env=jsdom",
+        "test-with-coverage": "jest --coverage && cat ./coverage/lcov.info | codacy-coverage --accountToken=0566e091a8b446479663000a7a14c3d6 --username=jaredwilli --projectName=react-reuse",
         "build:css": "cpx \"./src/components/**/*.css\" ./lib",
         "prebuild:lib": "rimraf lib",
         "build:lib": "npm-run-all --parallel build:commonjs build:css build:copy-files",
@@ -64,7 +66,9 @@
             "coverage",
             "scripts",
             "src/componentData",
-            "index.js"
+            "index.js",
+            "src/utils/",
+            "src/components/TextInputStyledComponents"
         ],
         "setupFiles": [
             "<rootDir>/config/polyfills.js"

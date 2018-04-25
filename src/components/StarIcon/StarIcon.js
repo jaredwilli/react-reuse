@@ -22,7 +22,7 @@ const StarIcon = ({ fillType, fill, stroke, size }) => {
                 fill={fillType === 'half' ? fill : 'transparent'}
                 stroke="transparent"/>
         </svg>
-    )
+    );
 };
 
 StarIcon.propTypes = {

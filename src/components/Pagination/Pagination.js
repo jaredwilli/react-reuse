@@ -92,7 +92,7 @@ class Pagination extends React.Component {
 
         // Don't show pagination if only 1 page
         if (!pager.pages || pager.pages.length <= 1) {
-            return null
+            return null;
         }
 
         return (

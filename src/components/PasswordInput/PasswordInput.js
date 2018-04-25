@@ -23,7 +23,7 @@ class PasswordInput extends React.Component {
     }
 
     render() {
-        const { htmlId, value, label, error,onChange, placeholder, maxLength, showVisibilityToggle, quality, ...props } = this.props;
+        const { htmlId, value, label, error, onChange, placeholder, maxLength, showVisibilityToggle, quality, ...props } = this.props;
         const { showPassword } = this.state;
 
         return (
@@ -48,7 +48,7 @@ class PasswordInput extends React.Component {
                     (value.length > 0 && quality) && <ProgressBar percent={quality} width={130} />
                 }
             </TextInput>
-        )
+        );
     }
 }
 

@@ -22,7 +22,7 @@ function copyFile(file) {
                 if (err) throw err;
                 resolve();
             }
-        )
+        );
     })
     .then(() => console.log(`Copied ${file} to ${libPath}`));
 }

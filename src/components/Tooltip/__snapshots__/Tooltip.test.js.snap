@@ -5,7 +5,6 @@ exports[`Tooltip renders the component correctly 1`] = `
   className="tooltip is-hidden"
   onMouseEnter={[Function]}
   onMouseOut={[Function]}
-  onTouchStart={[Function]}
 >
   <div
     className="tooltip-label"
@@ -37,7 +36,6 @@ exports[`Tooltip renders the component correctly 1`] = `
   </div>
   <div
     className="tooltip-content"
-    onMousOver={[Function]}
   >
     Test
   </div>

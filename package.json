@@ -64,7 +64,9 @@
             "coverage",
             "scripts",
             "src/componentData",
-            "index.js"
+            "index.js",
+            "src/utils/",
+            "src/components/TextInputStyledComponents"
         ],
         "setupFiles": [
             "<rootDir>/config/polyfills.js"

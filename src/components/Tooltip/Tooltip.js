@@ -5,8 +5,7 @@ import QuestionMark from '../QuestionMark/QuestionMark';
 
 import './Tooltip.css';
 
-/** Star Rating component that sets the selection on click and has hover animation */
-
+/** Tooltip component that takes a label for the text to tooltip and children for the content of the tooltip itself. */
 class Tooltip extends React.Component {
     constructor(props) {
         super(props);
@@ -31,20 +30,41 @@ class Tooltip extends React.Component {
     render() {
         const isVisible = this.state.isVisible ? 'is-visible' : 'is-hidden';
         const className = `tooltip ${isVisible}`;
+        const { label, click } = this.props;
+
+        if (click || window.width < '480') {
+            return (
+                <div className={className}>
+                    <div onClick={() => this.onMouseOver()}>
+                        <div className="tooltip-label">
+                            {label}
+
+                            <QuestionMark />
+                        </div>
+
+                        <div className="tooltip-content">
+                            {this.props.children}
+                        </div>
+                    </div>
+
+                    <div className="underlay"
+                        onClick={() => this.onMouseOut()}>
+                    </div>
+                </div>
+            );
+        }
 
         return (
             <div className={className}
                 onMouseEnter={() => this.onMouseOver()}
-                onMouseOut={() => this.onMouseOut()}
-                onTouchStart={() => this.onMouseOver()}>
+                onMouseOut={() => this.onMouseOut()}>
                 <div className="tooltip-label">
-                    {this.props.label}
+                    {label}
 
                     <QuestionMark />
                 </div>
 
-                <div className="tooltip-content"
-                    onMousOver={() => this.setState({isVisible: true})}>
+                <div className="tooltip-content">
                     {this.props.children}
                 </div>
             </div>
@@ -52,9 +72,16 @@ class Tooltip extends React.Component {
     }
 }
 
+Tooltip.defaultProps = {
+    click: false
+};
+
 Tooltip.propTypes = {
     /** The text to show for the tooltip that you hover */
-    label: PropTypes.string.isRequired
+    label: PropTypes.string.isRequired,
+
+    /** If the tooltip should be activated on click this is true */
+    click: PropTypes.bool
 };
 
 export default Tooltip;

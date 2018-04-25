@@ -68,7 +68,8 @@
             "src/componentData",
             "index.js",
             "src/utils/",
-            "src/components/TextInputStyledComponents"
+            "src/components/TextInputStyledComponents",
+            ".eslintrc.js"
         ],
         "setupFiles": [
             "<rootDir>/config/polyfills.js"

@@ -15,10 +15,11 @@ function Example() {
             <br />
             <br />
 
-            <Tooltip label="M.Gemi Fit Expert" click={true}>
-                Our fit experts try on and wear test every shoe we release. They are committed to providing feedback on fit, comfort and quality. Have a question? We can help you find the right style and fit for your specific needs.
+            <Tooltip label="Click Tooltip" click>
+                Here is a tooltip that has a link in the content which means that it requires being about to move the mouse over it to click the link. So it has a 'click' attribute which means you must click to activate the tooltip.
+
                 <a className="chat-link" style={{ display: 'block', color: '#fff', textDecoration: 'underline', textTransform: 'uppercase', marginTop: '20px' }}>
-                    Chat with a Fit Expert
+                    Click me to reveal the secrets!
                 </a>
             </Tooltip>
         </div>

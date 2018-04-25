@@ -14,13 +14,6 @@
     vertical-align: middle;
     margin-left: 5px;
 }
-.underlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
 .tooltip .tooltip-content {
     background: #979797;
     box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.19);
@@ -56,13 +49,8 @@
     opacity: 1;
     visibility: visible;
 }
-.tooltip.is-hidden .tooltip-content,
-.tooltip.is-hidden .underlay {
+.tooltip.is-hidden .tooltip-content {
     transform: translateY(100%) translateX(-50%);
     opacity: 0;
     visibility: hidden;
-}
-.tooltip.is-visible .underlay {
-    opacity: 1;
-    visibility: visible;
 }

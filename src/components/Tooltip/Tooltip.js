@@ -15,6 +15,14 @@ class Tooltip extends React.Component {
         };
     }
 
+    componentDidMount() {
+        document.addEventListener('mousedown', this.onMouseOut);
+    }
+
+    componentWillUnmount() {
+        document.removeEventListener('mousedown', this.onMouseOut);
+    }
+
     onMouseOver = () => {
         this.setState({
             isVisible: true
@@ -32,23 +40,18 @@ class Tooltip extends React.Component {
         const className = `tooltip ${isVisible}`;
         const { label, click } = this.props;
 
-        if (click || window.width < '480') {
+        if (click) {
             return (
-                <div className={className}>
-                    <div onClick={() => this.onMouseOver()}>
-                        <div className="tooltip-label">
-                            {label}
+                <div className={className}
+                    onClick={() => this.onMouseOver()}>
+                    <div className="tooltip-label">
+                        {label}
 
-                            <QuestionMark />
-                        </div>
-
-                        <div className="tooltip-content">
-                            {this.props.children}
-                        </div>
+                        <QuestionMark />
                     </div>
 
-                    <div className="underlay"
-                        onClick={() => this.onMouseOut()}>
+                    <div className="tooltip-content">
+                        {this.props.children}
                     </div>
                 </div>
             );

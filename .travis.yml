@@ -4,8 +4,6 @@ sudo: true
 language: node_js
 
 node_js:
-    "7"
-    "8"
     "stable"
 
 cache:

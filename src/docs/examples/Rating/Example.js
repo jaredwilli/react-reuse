@@ -31,6 +31,6 @@ function Example() {
             <br />
         </div>
     );
-};
+}
 
 export default Example;

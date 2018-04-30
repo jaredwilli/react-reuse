@@ -44,10 +44,10 @@ class Rating extends React.Component {
 
   render = () => {
     const fill = '#29292A';
-    let stars = [];
+    const stars = [];
 
     for (let i = 1; i <= this.props.scale; i++) {
-      let isHalf = this.state.rating % 1 > 0;
+      const isHalf = this.state.rating % 1 > 0;
       let fillType = 'transparent';
 
       if (this.state.rating !== null) {

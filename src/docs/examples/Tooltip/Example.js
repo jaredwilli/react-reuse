@@ -24,6 +24,6 @@ function Example() {
             </Tooltip>
         </div>
     );
-};
+}
 
 export default Example;

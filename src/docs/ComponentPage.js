@@ -19,14 +19,14 @@ const ComponentPage = ({ component }) => {
                         example={example}
                         componentName={name} />
                 )
-                : "No examples exist."
+                : 'No examples exist.'
             }
 
             <h3>Props</h3>
             {
                 props
                     ? <Props props={props} />
-                    : "This component accepts no props."
+                    : 'This component accepts no props.'
             }
         </div>
     );

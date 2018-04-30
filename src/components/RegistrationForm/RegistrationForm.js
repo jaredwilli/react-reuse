@@ -90,8 +90,8 @@ class RegistrationForm extends React.Component {
                     </form>
                 </div>
         );
-    };
-};
+    }
+}
 
 RegistrationForm.propTypes = {
     /** Message displayed upon successful submission */

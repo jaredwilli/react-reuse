@@ -8,7 +8,7 @@ export default function Hello() {
             Hello world
         </div>
     );
-};
+}
 
 Hello.propTypes = {
     /** Message to display */

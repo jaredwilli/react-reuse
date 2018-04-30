@@ -14,7 +14,7 @@ class PasswordInput extends React.Component {
         };
     }
 
-    toggleShowPassword = event => {
+    toggleShowPassword = () => {
         this.setState(prevState => {
             return {
                 showPassword: !prevState.showPassword
@@ -39,8 +39,10 @@ class PasswordInput extends React.Component {
                 required
                 {...props}>
                 {showVisibilityToggle &&
-                    <a onClick={this.toggleShowPassword}
-                        style={{ marginLeft: 5 }}>
+                    <a
+                        onClick={this.toggleShowPassword}
+                        style={{ marginLeft: 5 }}
+                    >
                         <EyeIcon />
                     </a>
                 }

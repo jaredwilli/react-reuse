@@ -23,6 +23,6 @@ function Example() {
             <StarIcon fillType="full" fill="blue" stroke="magenta" />
         </div>
     );
-};
+}
 
 export default Example;

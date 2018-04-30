@@ -17,7 +17,7 @@ function TextInput({ htmlId, name, label, type = 'text', required = false, onCha
                 onChange={onChange}
                 style={error && { border: 'solid 1px red' }}
                 {...props} />
-                {children}
+            {children}
 
             {error &&
                 <div style={{ color: 'red' }}>
@@ -26,7 +26,7 @@ function TextInput({ htmlId, name, label, type = 'text', required = false, onCha
             }
         </div>
     );
-};
+}
 
 TextInput.propTypes = {
     /** Unique HTML ID. Used for tying label to HTML input. Handy hook for automated testing. */

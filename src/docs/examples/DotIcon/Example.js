@@ -17,6 +17,6 @@ function Example() {
             <DotIcon size={105} fill="#29292a" />
         </div>
     );
-};
+}
 
 export default Example;

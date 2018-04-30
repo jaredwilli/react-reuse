@@ -31,12 +31,12 @@ function TextInput({ htmlId, name, label, type = 'text', required = false, onCha
                 value={value}
                 onChange={onChange}
                 {...props} />
-                {children}
+            {children}
 
             {error && <Error>{error}</Error>}
         </Fieldset>
     );
-};
+}
 
 TextInput.propTypes = {
     /** Unique HTML ID. Used for tying label to HTML input. Handy hook for automated testing. */

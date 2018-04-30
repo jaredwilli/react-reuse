@@ -23,7 +23,7 @@ module.exports = {
         'no-undef': 'warn',
         'no-tabs': 'error',
         'no-eval': 'error',
-        'no-alert': 'error',
+        'no-alert': 'warn',
         'no-console': 'off',
         'camelcase': 'error',
         'no-debugger': 'warn',
@@ -53,7 +53,7 @@ module.exports = {
         'react/no-direct-mutation-state': 'error',
         'react/jsx-closing-bracket-location': 'warn',
         'react/default-props-match-prop-types': 'error',
-        'indent': ['error', 4, {
+        'indent': ['warn', 4, {
             SwitchCase: 1
         }],
         'react/prop-types': [2, {

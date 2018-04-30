@@ -36,8 +36,6 @@ const values = [
     }
 ];
 
-
-
 function Example() {
     const SIZE_OPTIONS = [
         'Felt Full Size Smaller',
@@ -72,6 +70,6 @@ function Example() {
             <LikertScale value={values[4]} options={WIDTH_OPTIONS} width="300px" />
         </div>
     );
-};
+}
 
 export default Example;

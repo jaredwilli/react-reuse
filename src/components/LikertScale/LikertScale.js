@@ -5,7 +5,8 @@ import './LikertScale.css';
 
 const LikertScale = props => {
     const valueIndex = props.options.indexOf(props.value.label[0]);
-    let valueArr = new Array(props.options.length);
+    const valueArr = new Array(props.options.length);
+
     const labelArrs = {
         size: [
             'Runs Small',
@@ -19,13 +20,13 @@ const LikertScale = props => {
         ]
     };
 
-    for (var i = 0; i < valueArr.length; i++) {
+    for (let i = 0; i < valueArr.length; i++) {
         if (i === 0) {
             valueArr[i] = 0;
         } else if (i === valueArr.length) {
             valueArr[i] = 100;
         } else {
-            valueArr[i] = 100 / (valueArr.length - 1) * i
+            valueArr[i] = 100 / (valueArr.length - 1) * i;
         }
     }
 
@@ -44,8 +45,10 @@ const LikertScale = props => {
 
                     return (
                         <div key={index} className="small-dot" style={{ left: `${val}%` }}>
-                            {([0,2,4].indexOf(index) !== -1) && <span>
-                                {label[[0,2,4].indexOf(index)]}</span>
+                            {([0,2,4].indexOf(index) !== -1) &&
+                                <span>
+                                    {label[[0,2,4].indexOf(index)]}
+                                </span>
                             }
                         </div>
                     );

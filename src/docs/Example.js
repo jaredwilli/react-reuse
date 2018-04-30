@@ -42,7 +42,8 @@ class Example extends Component {
 }
 
 Example.propTypes = {
-    example: PropTypes.object.isRequired
+    example: PropTypes.object.isRequired,
+    componentName: PropTypes.string
 };
 
 export default Example;

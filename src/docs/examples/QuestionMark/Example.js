@@ -14,6 +14,6 @@ function Example() {
             <QuestionMark stroke="magenta" />
         </div>
     );
-};
+}
 
 export default Example;

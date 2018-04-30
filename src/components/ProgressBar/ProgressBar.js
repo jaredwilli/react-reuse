@@ -3,7 +3,10 @@ import PropTypes from 'prop-types';
 
 class ProgressBar extends Component {
     getColor = percent => {
-        if (this.props.percent === 100) { return 'green' }
+        if (this.props.percent === 100) {
+            return 'green';
+        }
+
         return this.props.percent > 50
             ? 'lightgreen'
             : 'red';

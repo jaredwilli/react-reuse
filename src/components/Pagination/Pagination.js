@@ -20,7 +20,7 @@ class Pagination extends React.Component {
         }
     }
 
-    componentDidUpdate(prevProps, prevState) {
+    componentDidUpdate(prevProps) {
         // Reset page if items array has changed
         if ( this.props.items !== prevProps.items) {
             this.setPage(this.props.initialPage);
@@ -57,6 +57,7 @@ class Pagination extends React.Component {
             endPage = totalPages;
         } else {
             // Calculate start/end pages if more than 10
+            /* eslint-disable no-lonely-if */
             if (currentPage <= 6) {
                 startPage = 1;
                 endPage = 10;
@@ -67,6 +68,7 @@ class Pagination extends React.Component {
                 startPage = currentPage - 5;
                 endPage = currentPage + 4;
             }
+            /* eslint-enable no-lonely-if */
         }
 
         // Calculate start and end item indexes
@@ -97,32 +99,34 @@ class Pagination extends React.Component {
 
         return (
             <ul className="pagination">
-              <li className={pager.currentPage === 1 ? 'disabled' : ''}>
-                <a onClick={() => this.setPage(1)}>First</a>
-              </li>
-              {pager.currentPage !== 1 && (
                 <li className={pager.currentPage === 1 ? 'disabled' : ''}>
-                    {pager.currentPage !== 1 && <a onClick={() => this.setPage(pager.currentPage - 1)}>&#8592;</a>}
-                    {pager.currentPage === 1 && <span style={{padding: '0 13px', margin: '0 6px'}}>&nbsp;</span>}
+                    <a onClick={() => this.setPage(1)}>First</a>
                 </li>
-              )}
-              {pager.pages.map((page, index) => (
-                <li key={index}
-                  className={pager.currentPage === page ? 'active' : ''}>
-                  <a onClick={() => this.setPage(page)}>{page}</a>
-                </li>
-              ))}
-              {pager.currentPage !== pager.totalPages && (
+                {pager.currentPage !== 1 && (
+                    <li className={pager.currentPage === 1 ? 'disabled' : ''}>
+                        {pager.currentPage !== 1 && <a onClick={() => this.setPage(pager.currentPage - 1)}>&#8592;</a>}
+                        {pager.currentPage === 1 && <span style={{padding: '0 13px', margin: '0 6px'}}>&nbsp;</span>}
+                    </li>
+                )}
+                {pager.pages.map((page, index) => (
+                    <li
+                        key={index}
+                        className={pager.currentPage === page ? 'active' : ''}
+                    >
+                        <a onClick={() => this.setPage(page)}>{page}</a>
+                    </li>
+                ))}
+                {pager.currentPage !== pager.totalPages && (
+                    <li className={pager.currentPage === pager.totalPages ? 'disabled' : ''}>
+                        {pager.currentPage !== pager.totalPages && <a onClick={() => this.setPage(pager.currentPage + 1)}>&#8594;</a>}
+                        {pager.currentPage === pager.totalPages && <span style={{padding: '0 13px', margin: '0 6px'}}>&nbsp;</span>}
+                    </li>
+                )}
                 <li className={pager.currentPage === pager.totalPages ? 'disabled' : ''}>
-                    {pager.currentPage !== pager.totalPages && <a onClick={() => this.setPage(pager.currentPage + 1)}>&#8594;</a>}
-                    {pager.currentPage === pager.totalPages && <span style={{padding: '0 13px', margin: '0 6px'}}>&nbsp;</span>}
+                    <a onClick={() => this.setPage(pager.totalPages)}>Last</a>
                 </li>
-              )}
-              <li className={pager.currentPage === pager.totalPages ? 'disabled' : ''}>
-                <a onClick={() => this.setPage(pager.totalPages)}>Last</a>
-              </li>
             </ul>
-          );
+        );
     }
 }
 

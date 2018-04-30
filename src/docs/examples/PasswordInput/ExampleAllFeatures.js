@@ -26,7 +26,9 @@ class ExampleAllFeatures extends React.Component {
                     value={this.state.password}
                     error="First name is required"
                     minLength={8}
-                    onChange={event => this.setState({ password: event.target.value })} 
+                    onChange={event => this.setState({
+                        password: event.target.value
+                    })}
                     quality={this.getQuality()}
                     showVisibilityToggle
                     {...this.props}
@@ -34,6 +36,6 @@ class ExampleAllFeatures extends React.Component {
             </div>
         );
     }
-};
+}
 
 export default ExampleAllFeatures;

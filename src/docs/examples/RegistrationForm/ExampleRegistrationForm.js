@@ -7,6 +7,6 @@ export default class ExampleRegistrationForm extends React.Component {
     }
 
     render() {
-        return <RegistrationForm onSubmit={this.onSubmit} />
-    };
+        return <RegistrationForm onSubmit={this.onSubmit} />;
+    }
 }

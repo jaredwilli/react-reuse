@@ -53,7 +53,7 @@ module.exports = {
         'react/no-direct-mutation-state': 'error',
         'react/jsx-closing-bracket-location': 'warn',
         'react/default-props-match-prop-types': 'error',
-        'indent': ['error', 2, {
+        'indent': ['error', 4, {
             SwitchCase: 1
         }],
         'react/prop-types': [2, {

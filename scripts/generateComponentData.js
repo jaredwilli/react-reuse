@@ -1,3 +1,5 @@
+/* eslint-disable no-console */
+
 const fs = require('fs');
 const path = require('path');
 const chalk = require('chalk');
@@ -10,7 +12,7 @@ const paths = {
     output: path.join(__dirname, '../src', 'componentData.js')
 };
 
-const enableWatchMode = process.argv.slice(2) == '--watch';
+const enableWatchMode = process.argv.slice(2) === '--watch';
 
 if (enableWatchMode) {
     // Regenerate component data when components change

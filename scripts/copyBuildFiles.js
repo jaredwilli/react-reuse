@@ -1,3 +1,5 @@
+/* eslint-disable no-console */
+
 const path = require('path');
 const fse = require('fs-extra');
 
@@ -19,7 +21,7 @@ function copyFile(file) {
             file,
             libPath,
             (err) => {
-                if (err) { throw err };
+                if (err) { throw err }
 
                 resolve();
             }
@@ -35,7 +37,7 @@ function resolveBuildPath(file) {
 function createPackageFile() {
     return new Promise(resolve => {
         fse.readFile(path.resolve(__dirname, '../package.json'), 'utf8', (err, data) => {
-            if (err) { throw err };
+            if (err) { throw err }
 
             resolve(data);
         })
@@ -75,7 +77,7 @@ function createPackageFile() {
             const data = JSON.stringify(minimalPackage, null, 2);
 
             fse.writeFile(libPath, data, (err) => {
-                if (err) { throw err };
+                if (err) { throw err }
 
                 console.log(chalk.green(`Created package.json file in ${libPath}`));
                 resolve();

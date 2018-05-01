@@ -10,17 +10,20 @@ const StarIcon = ({ fillType, fill, stroke, size }) => {
             xmlns="http://www.w3.org/2000/svg"
             width={size}
             height={size}
-            viewBox="0 0 32 32">
+            viewBox="0 0 32 32"
+        >
             <path className="full"
                 d="M15.25,22.08l-8,4.24,1.53-9L2.25,11l9-.12,4-9.36,4,9.36,9,.12-6.5,6.36,1.53,9Z"
                 transform="translate(-1.04 -0.23)"
                 fill={fillType === 'full' ? fill : 'transparent'}
-                stroke={stroke} />
+                stroke={stroke}
+            />
             <path className="half"
                 d="M15.25,22.08l-8,4.24,1.53-9L2.25,11l9-.12,4-9.36Z"
                 transform="translate(-1.04 -0.23)"
                 fill={fillType === 'half' ? fill : 'transparent'}
-                stroke="transparent"/>
+                stroke="transparent"
+            />
         </svg>
     );
 };

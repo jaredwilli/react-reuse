@@ -17,7 +17,8 @@ function TextInput({ htmlId, name, label, type = 'text', required = false, onCha
                 value={value}
                 onChange={onChange}
                 className={error && 'textinput__input--state-error'}
-                {...props} />
+                {...props}
+            />
             {children}
 
             {error &&

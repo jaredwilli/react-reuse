@@ -37,7 +37,8 @@ class PasswordInput extends React.Component {
                 error={error}
                 onChange={onChange}
                 required
-                {...props}>
+                {...props}
+            >
                 {showVisibilityToggle &&
                     <a
                         onClick={this.toggleShowPassword}

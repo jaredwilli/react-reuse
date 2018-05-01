@@ -17,7 +17,8 @@ const ComponentPage = ({ component }) => {
                     <Example
                         key={example.code}
                         example={example}
-                        componentName={name} />
+                        componentName={name}
+                    />
                 )
                 : 'No examples exist.'
             }

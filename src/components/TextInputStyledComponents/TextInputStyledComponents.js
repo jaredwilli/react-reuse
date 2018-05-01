@@ -30,7 +30,8 @@ function TextInput({ htmlId, name, label, type = 'text', required = false, onCha
                 placeholder={placeholder}
                 value={value}
                 onChange={onChange}
-                {...props} />
+                {...props}
+            />
             {children}
 
             {error && <Error>{error}</Error>}

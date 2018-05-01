@@ -16,7 +16,8 @@ function TextInput({ htmlId, name, label, type = 'text', required = false, onCha
                 value={value}
                 onChange={onChange}
                 style={error && { border: 'solid 1px red' }}
-                {...props} />
+                {...props}
+            />
             {children}
 
             {error &&

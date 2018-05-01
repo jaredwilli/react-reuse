@@ -6,7 +6,8 @@ const DotIcon = props => (
         xmlns="http://www.w3.org/2000/svg"
         width={props.size}
         height={props.size}
-        viewBox="0 0 10 10">
+        viewBox="0 0 10 10"
+    >
         <circle
             cx="963"
             cy="3070"

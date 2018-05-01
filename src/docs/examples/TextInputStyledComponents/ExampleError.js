@@ -3,12 +3,17 @@ import TextInputStyledComponents from 'react-reuse/TextInputStyledComponents';
 
 /** Required TextBox with Error */
 const ExampleError = () => {
+    const showMessage = () => {
+        /* eslint-disable no-alert */
+        alert('Changed!');
+    };
+
     return (
         <TextInputStyledComponents
             htmlId="example-error"
             label="First Name"
             name="firstname"
-            onChange={() => alert('Changed!')}
+            onChange={() => showMessage()}
             error="First name is required"
             required
         />

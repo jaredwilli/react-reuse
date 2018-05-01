@@ -43,7 +43,8 @@ class Tooltip extends React.Component {
         if (click) {
             return (
                 <div className={className}
-                    onClick={() => this.onMouseOver()}>
+                    onClick={() => this.onMouseOver()}
+                >
                     <div className="tooltip-label">
                         {label}
 
@@ -60,7 +61,8 @@ class Tooltip extends React.Component {
         return (
             <div className={className}
                 onMouseEnter={() => this.onMouseOver()}
-                onMouseOut={() => this.onMouseOut()}>
+                onMouseOut={() => this.onMouseOut()}
+            >
                 <div className="tooltip-label">
                     {label}
 

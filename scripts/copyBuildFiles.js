@@ -2,6 +2,7 @@
 
 const path = require('path');
 const fse = require('fs-extra');
+const chalk = require('chalk');
 
 const files = [
     'README.md',

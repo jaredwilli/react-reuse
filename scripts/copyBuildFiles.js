@@ -1,5 +1,5 @@
-var path = require('path');
-var fse = require('fs-extra');
+const path = require('path');
+const fse = require('fs-extra');
 
 const files = [
     'README.md',
@@ -19,7 +19,8 @@ function copyFile(file) {
             file,
             libPath,
             (err) => {
-                if (err) throw err;
+                if (err) { throw err };
+
                 resolve();
             }
         );
@@ -34,7 +35,7 @@ function resolveBuildPath(file) {
 function createPackageFile() {
     return new Promise(resolve => {
         fse.readFile(path.resolve(__dirname, '../package.json'), 'utf8', (err, data) => {
-            if (err) throw err;
+            if (err) { throw err };
 
             resolve(data);
         })
@@ -56,10 +57,10 @@ function createPackageFile() {
 
         const minimalPackage = {
             name: 'react-reuse',
+            main: './index.js',
             author,
             version,
             description,
-            main: './index.js',
             keywords,
             repository,
             license,
@@ -72,9 +73,11 @@ function createPackageFile() {
         return new Promise(resolve => {
             const libPath = path.resolve(__dirname, '../lib/package.json');
             const data = JSON.stringify(minimalPackage, null, 2);
+
             fse.writeFile(libPath, data, (err) => {
-                if (err) throw err;
-                console.log(`Created package.json file in ${libPath}`);
+                if (err) { throw err };
+
+                console.log(chalk.green(`Created package.json file in ${libPath}`));
                 resolve();
             })
         })

@@ -38,8 +38,12 @@ class RegistrationForm extends React.Component {
         const errors = {};
         const { minPasswordLength } = this.props;
 
-        if (!email) errors.email = 'Email is required.';
-        if (password.length < minPasswordLength) errors.password = `Password must be ${minPasswordLength} characters long.`;
+        if (!email) {
+            errors.email = 'Email is required.';
+        }
+        if (password.length < minPasswordLength) {
+            errors.password = `Password must be ${minPasswordLength} characters long.`;
+        }
 
         this.setState({ errors });
 

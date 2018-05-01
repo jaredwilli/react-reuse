@@ -17,25 +17,25 @@ class Rating extends React.Component {
   }
 
   onClick = rating => {
-    if (this.props.rating) return; // disable
+    if (this.props.rating) { return; } // disable
 
     this.setState({
-      rating: rating,
-      tempRating: rating
+      tempRating: rating,
+      rating
     });
   };
 
   onMouseOver = rating => {
-    if (this.props.rating) return; // disable
+    if (this.props.rating) { return; } // disable
 
     this.setState({
-      rating: rating,
-      tempRating: this.state.rating
+      tempRating: this.state.rating,
+      rating
     });
   };
 
   onMouseOut = () => {
-    if (this.props.rating) return; // disable
+    if (this.props.rating) { return; } // disable
 
     this.setState({
       rating: this.state.tempRating
@@ -81,7 +81,6 @@ class Rating extends React.Component {
 
         {this.props.showAverage && <span className="star-average">{this.props.rating}</span>}
         {this.props.totalRatings && <span className="star-total">{this.props.totalRatings} reviews</span>}
-
       </div>
     );
   };

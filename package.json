@@ -45,14 +45,14 @@
         "test": "node scripts/test.js --env=jsdom",
         "test-with-coverage": "jest --coverage && cat ./coverage/lcov.info | codacy-coverage --accountToken=0566e091a8b446479663000a7a14c3d6 --username=jaredwilli --projectName=react-reuse",
         "build:css": "cpx \"./src/components/**/*.css\" ./lib",
-        "prebuild": "rimraf lib",
-        "build": "npm-run-all --parallel build:commonjs build:css build:copy-files",
+        "prebuild:lib": "rimraf lib",
+        "build:lib": "npm-run-all --parallel build:commonjs build:css build:copy-files",
         "build:copy-files": "node scripts/copyBuildFiles.js",
         "build:docs": "node scripts/build.js",
         "predeploy": "npm run build:docs",
         "deploy": "gh-pages -b master -d build",
         "build:commonjs": "cross-env NODE_ENV=production babel ./src/components --out-dir ./lib --ignore test.js",
-        "prepublish": "npm run build"
+        "prepublish": "npm run build:lib"
     },
     "jest": {
         "collectCoverageFrom": [

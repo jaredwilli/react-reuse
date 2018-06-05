@@ -4,7 +4,7 @@ A resuable component library for react that is self-documenting and automaticall
 
 [![Build Status](https://travis-ci.org/jaredwilli/react-reuse.svg?branch=master)](https://travis-ci.org/jaredwilli/react-reuse)
 [![codebeat badge](https://codebeat.co/badges/1396f00a-f7ce-43a0-af73-1bfc2298213c)](https://codebeat.co/projects/github-com-jaredwilli-react-reuse-master)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/1f00dd9a07d9407693d494c8803dd57d)](https://www.codacy.com/app/jaredwilli/react-reuse?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=jaredwilli/react-reuse&amp;utm_campaign=Badge_Grade)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/9d42183cd016465cb588eac8400ef73e)](https://www.codacy.com/app/jaredwilli/react-reuse?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=jaredwilli/react-reuse&amp;utm_campaign=Badge_Grade)
 [![dependencies Status](https://david-dm.org/jaredwilli/react-reuse/status.svg)](https://david-dm.org/jaredwilli/react-reuse)
 [![license](https://img.shields.io/npm/l/react-reuse.svg?style=flat-square)](https://github.com/jaredwilli/react-reuse/blob/master/LICENSE)
 

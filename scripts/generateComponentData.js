@@ -1,4 +1,4 @@
-/* eslint-disable no-console */
+/* eslint-disable */
 
 const fs = require('fs');
 const path = require('path');
@@ -19,6 +19,8 @@ if (enableWatchMode) {
     chokidar
         .watch([paths.examples, paths.components])
         .on('change', (event, path) => {
+            console.log(event, path);
+
             generate(paths);
         });
 } else {
@@ -27,7 +29,7 @@ if (enableWatchMode) {
 }
 
 function generate(paths) {
-    let errors = [];
+    const errors = [];
 
     const componentData = getDirectories(paths.components).map(
         componentName => {

@@ -12,7 +12,7 @@ const files = [
 Promise.all(
     files.map(file => copyFile(file))
 )
-.then(() => createPackageFile());
+    .then(() => createPackageFile());
 
 function copyFile(file) {
     const libPath = resolveBuildPath(file);
@@ -22,13 +22,13 @@ function copyFile(file) {
             file,
             libPath,
             (err) => {
-                if (err) { throw err }
+                if (err) { throw err; }
 
                 resolve();
             }
         );
     })
-    .then(() => console.log(`Copied ${file} to ${libPath}`));
+        .then(() => console.log(`Copied ${file} to ${libPath}`));
 }
 
 function resolveBuildPath(file) {
@@ -38,51 +38,51 @@ function resolveBuildPath(file) {
 function createPackageFile() {
     return new Promise(resolve => {
         fse.readFile(path.resolve(__dirname, '../package.json'), 'utf8', (err, data) => {
-            if (err) { throw err }
+            if (err) { throw err; }
 
             resolve(data);
-        })
+        });
     })
-    .then(data => JSON.parse(data))
-    .then(packageData => {
-        const {
-            author,
-            version,
-            description,
-            keywords,
-            repository,
-            license,
-            bugs,
-            homepage,
-            peerDependencies,
-            dependencies
-        } = packageData;
+        .then(data => JSON.parse(data))
+        .then(packageData => {
+            const {
+                author,
+                version,
+                description,
+                keywords,
+                repository,
+                license,
+                bugs,
+                homepage,
+                peerDependencies,
+                dependencies
+            } = packageData;
 
-        const minimalPackage = {
-            name: 'react-reuse',
-            main: './index.js',
-            author,
-            version,
-            description,
-            keywords,
-            repository,
-            license,
-            bugs,
-            homepage,
-            peerDependencies,
-            dependencies
-        };
+            const minimalPackage = {
+                name: 'react-reuse',
+                main: './index.js',
+                author,
+                version,
+                description,
+                keywords,
+                repository,
+                license,
+                bugs,
+                homepage,
+                peerDependencies,
+                dependencies
+            };
 
-        return new Promise(resolve => {
-            const libPath = path.resolve(__dirname, '../lib/package.json');
-            const data = JSON.stringify(minimalPackage, null, 2);
+            return new Promise(resolve => {
+                const libPath = path.resolve(__dirname, '../lib/package.json');
+                const data = JSON.stringify(minimalPackage, null, 2);
 
-            fse.writeFile(libPath, data, (err) => {
-                if (err) { throw err }
+                fse.writeFile(libPath, data, (err) => {
+                    if (err) { throw err; }
 
-                console.log(chalk.green(`Created package.json file in ${libPath}`));
-                resolve();
-            })
-        })
-    })
+                    console.log(chalk.green(`Created package.json file in ${libPath}`));
+                    resolve();
+                });
+            });
+        });
 }

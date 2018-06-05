@@ -1,5 +1,5 @@
 {
-    "name": "react-reuse-template",
+    "name": "react-reuse",
     "version": "1.0.1",
     "main": "./lib/index.js",
     "private": true,

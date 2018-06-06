@@ -26,6 +26,30 @@ npm install react-reuse
 # Docs
 [Component documentation](https://jaredwilli.github.io/react-reuse/)
 
+# Contributing
+When you create a new component in the component library, you must create a folder for it in /components, and a folder in /examples. The easiest way to do this is to just copy existing components and their files and just change the names and contents. That way you have all the files needed for a complete workflow for your components.
+
+Once the component has been completed and you are ready to publish the changes to NPM, run the following to bump the version:
+```
+npm version major|minor|patch
+```
+
+Commit your changes, and push your branch.
+
+# Publishing
+To publish the package to NPM simply run the publish command. This will run build:lib which runs all the necessary build scripts for building the library for publishing and public use.
+
+```
+npm publish
+```
+
+# Deploying
+To deploy the docs for the component library to the github pages simply run the deploy script. This will run build:docs which runs the build.js script to generate the documentation and all the necessary output for the page to render the component library.
+
+```
+npm run deploy
+```
+
 
 ## License
 

@@ -4,7 +4,8 @@ import PropTypes from 'prop-types';
 /** Question mark component for the atom of a tooltip component */
 const QuestionMark = ({ stroke, size }) => {
     return (
-        <svg xmlns="http://www.w3.org/2000/svg"
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
             width={size}
             height={size}
             viewBox="0 0 19 19"

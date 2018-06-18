@@ -29,7 +29,9 @@ exports[`Tabs renders the component correctly 1`] = `
   <div
     className="tabs__content"
   >
-    <div>
+    <div
+      className="tab-pane"
+    >
       <div>
         This is my tab 1 contents!
       </div>

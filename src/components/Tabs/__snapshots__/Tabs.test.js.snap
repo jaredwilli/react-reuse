@@ -1,19 +1,39 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Tabs renders the component correctly 1`] = `
-<svg
-  height={5}
-  viewBox="0 0 10 10"
-  width={5}
-  xmlns="http://www.w3.org/2000/svg"
+<div
+  className="tabs"
 >
-  <circle
-    cx="963"
-    cy="3070"
-    fill="#959595"
-    fillRule="evenodd"
-    r="5"
-    transform="translate(-958 -3065)"
-  />
-</svg>
+  <ul
+    className="tabs__labels"
+  >
+    <li
+      className="active"
+      onClick={[Function]}
+    >
+      Tab 1
+    </li>
+    <li
+      className=""
+      onClick={[Function]}
+    >
+      Tab 2
+    </li>
+    <li
+      className=""
+      onClick={[Function]}
+    >
+      Tab 3
+    </li>
+  </ul>
+  <div
+    className="tabs__content"
+  >
+    <div>
+      <div>
+        This is my tab 1 contents!
+      </div>
+    </div>
+  </div>
+</div>
 `;

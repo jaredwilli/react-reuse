@@ -5,7 +5,8 @@ import Pane from './Pane';
 
 describe('Pane', () => {
     it('renders the component correctly', () => {
-        const tree = renderer.create(<Pane />).toJSON();
+        const tree = renderer.create(<Pane label="Tab 1"><div>This is my tab 1 contents!</div></Pane>).toJSON();
+
         expect(tree).toMatchSnapshot();
     });
 });

@@ -12,5 +12,6 @@ export { default as Rating } from './Rating';
 export { default as RegistrationForm } from './RegistrationForm';
 export { default as StarIcon } from './StarIcon';
 export { default as Tabs } from './Tabs';
+export { default as Textarea } from './Textarea';
 export { default as TextInput } from './TextInput';
 export { default as Tooltip } from './Tooltip';

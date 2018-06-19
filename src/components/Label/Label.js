@@ -13,8 +13,10 @@ const Label = ({ htmlFor, label, required}) => {
 Label.propTypes = {
     /** HTML ID for associated input */
     htmlFor: PropTypes.string.isRequired,
+
     /** Label text */
-    label: PropTypes.string.isRequired,
+    label: PropTypes.string,
+
     /** Display asterisk after label if true */
     required: PropTypes.bool
 };

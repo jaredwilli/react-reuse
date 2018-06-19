@@ -72,7 +72,8 @@ class RegistrationForm extends React.Component {
         return (
             submitted
                 ? <h2>{this.props.confirmationMessage}</h2>
-                : <div>
+                :
+                <div>
                     <form>
                         <TextInput
                             htmlId="registration-form-email"
@@ -95,7 +96,9 @@ class RegistrationForm extends React.Component {
                             showVisibilityToggle
                         />
 
-                        <input type="submit" value="Register"
+                        <input
+                            type="submit"
+                            value="Register"
                             onClick={this.onSubmit}
                         />
                     </form>

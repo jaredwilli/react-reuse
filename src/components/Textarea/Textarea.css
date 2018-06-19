@@ -1,0 +1,14 @@
+
+.mg-textarea {
+    width: 100%;
+}
+
+.mg-textarea textarea {
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    font-size: 15px;
+    padding: 12px;
+    outline: none;
+}
+
+

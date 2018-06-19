@@ -16,11 +16,19 @@ exports[`Input renders the component correctly 1`] = `
      
   </label>
   <input
+    htmlId="test"
     id="test"
+    label="Test"
     name="Test"
     onChange={[Function]}
     placeholder={undefined}
-    style={undefined}
+    style={
+      Object {
+        "borderColor": "#ccc",
+        "height": undefined,
+        "width": undefined,
+      }
+    }
     type="text"
     value={undefined}
   />

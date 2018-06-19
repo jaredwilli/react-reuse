@@ -1,0 +1,12 @@
+
+.mg-input {
+
+}
+
+.mg-input input {
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    font-size: 15px;
+    font-family: BrownStd, arial, sans-serif;
+    padding: 10px;
+}

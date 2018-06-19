@@ -2,38 +2,49 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Label from '../Label';
 
+import './Input.css';
+
 /** Input with integrated label to enforce consistency in layout, error display, label placement, and required field marker. */
-function TextInput({ htmlId, name, label, type = 'text', required = false, onChange, placeholder, value, error, children, ...props }) {
+const Input = ({ type = 'text', required = false, ...props }) => {
+
+    const style = {
+        borderColor: props.error ? 'red' : '#ccc',
+        width: props.width && props.width,
+        height: props.height && props.height
+    };
+
     return (
         <div className="mg-input">
-            <Label
-                htmlFor={htmlId}
-                label={label}
-                required={required}
-            />
+            {props.label &&
+                <Label
+                    htmlFor={props.htmlId}
+                    label={props.label}
+                    required={required}
+                />
+            }
 
             <input
-                id={htmlId}
+                id={props.htmlId}
                 type={type}
-                name={name}
-                placeholder={placeholder}
-                value={value}
-                onChange={onChange}
-                style={error && { border: 'solid 1px red' }}
+                name={props.name}
+                placeholder={props.placeholder}
+                value={props.value}
+                onChange={props.onChange}
+                style={style}
                 {...props}
             />
-            {children}
+            {props.children}
 
-            {error &&
+            {props.error &&
                 <div style={{ color: 'red' }}>
-                    {error}
+                    {props.error}
                 </div>
             }
         </div>
     );
-}
+};
 
-TextInput.propTypes = {
+Input.propTypes = {
     /** Unique HTML ID. Used for tying label to HTML input. Handy hook for automated testing. */
     htmlId: PropTypes.string.isRequired,
 
@@ -44,16 +55,22 @@ TextInput.propTypes = {
     label: PropTypes.string,
 
     /** Input type */
-    type: PropTypes.oneOf(['text', 'number', 'password']),
+    type: PropTypes.oneOf(['text', 'email', 'number', 'password']),
 
     /** Mark label with asterisk if set to true */
     required: PropTypes.bool,
 
     /** Function to call onChange */
-    onChange: PropTypes.func.isRequired,
+    onChange: PropTypes.func,
 
     /** Placeholder to display when empty */
     placeholder: PropTypes.string,
+
+    /** Width */
+    width: PropTypes.string,
+
+    /** Height */
+    height: PropTypes.string,
 
     /** Value */
     value: PropTypes.any,
@@ -65,4 +82,4 @@ TextInput.propTypes = {
     children: PropTypes.node
 };
 
-export default TextInput;
+export default Input;

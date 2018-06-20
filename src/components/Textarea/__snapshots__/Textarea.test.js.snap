@@ -28,6 +28,7 @@ exports[`Textarea renders the component correctly 1`] = `
         "width": undefined,
       }
     }
+    value={undefined}
   />
 </div>
 `;

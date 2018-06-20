@@ -1,43 +1,63 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import classnames from 'classnames';
+
 import Label from '../Label';
 
 import './Textarea.css';
 
 /** Textarea with integrated label to enforce consistency in layout, error display, label placement, and required field marker. */
-const Textarea = ({ htmlId, ...props }) => {
+const Textarea = ({
+    htmlId,
+    name,
+    placeholder,
+    onChange,
+    value,
+    children,
+    label,
+    error,
+    resize,
+    width,
+    height,
+    required = false,
+    ...props
+}) => {
 
     const style = {
-        borderColor: props.error ? 'red' : '#ccc',
-        resize: props.resize && props.resize,
-        width: props.width && props.width,
-        height: props.height && props.height
+        borderColor: error ? 'red' : '#ccc',
+        resize: resize && resize,
+        width: width && width,
+        height: height && height
     };
+
+    const myClass = classnames('mg-input', {
+        ['mg-error']: error
+    });
 
     return (
         <div className="mg-textarea">
             <Label
                 htmlFor={htmlId}
-                label={props.label}
-                required={props.required}
+                label={label}
+                required={required}
             />
 
             <textarea
                 id={htmlId}
-                name={props.name}
-                placeholder={props.placeholder}
-                onChange={props.onChange}
+                name={name}
+                placeholder={placeholder}
+                onChange={onChange}
                 style={style}
                 {...props}
             >
-                {props.value}
+                {value}
             </textarea>
 
-            {props.children}
+            {children}
 
-            {props.error &&
+            {error &&
                 <div style={{ color: 'red' }}>
-                    {props.error}
+                    {error}
                 </div>
             }
         </div>

@@ -17,11 +17,9 @@ exports[`Textarea renders the component correctly 1`] = `
   </label>
   <textarea
     id="test"
-    label="Test"
     name="Test"
     onChange={[Function]}
     placeholder={undefined}
-    resize="none"
     style={
       Object {
         "borderColor": "#ccc",

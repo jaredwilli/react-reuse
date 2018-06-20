@@ -1,43 +1,63 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import classNames from 'classnames';
+
 import Label from '../Label';
 
 import './Input.css';
 
 /** Input with integrated label to enforce consistency in layout, error display, label placement, and required field marker. */
-const Input = ({ type = 'text', required = false, ...props }) => {
+const Input = ({
+    htmlId,
+    name,
+    placeholder,
+    onChange,
+    value,
+    label,
+    children,
+    error,
+    width,
+    height,
+    type = 'text',
+    required = false,
+    ...props
+}) => {
 
     const style = {
-        borderColor: props.error ? 'red' : '#ccc',
-        width: props.width && props.width,
-        height: props.height && props.height
+        borderColor: error ? 'red' : '#ccc',
+        width: width && width,
+        height: height && height
     };
 
+    const myClass = classNames('mg-input', {
+        ['mg-error']: error
+    });
+
     return (
-        <div className="mg-input">
-            {props.label &&
+        <div className={myClass}>
+            {label &&
                 <Label
-                    htmlFor={props.htmlId}
-                    label={props.label}
+                    htmlFor={htmlId}
+                    label={label}
                     required={required}
                 />
             }
 
             <input
-                id={props.htmlId}
+                id={htmlId}
                 type={type}
-                name={props.name}
-                placeholder={props.placeholder}
-                value={props.value}
-                onChange={props.onChange}
+                name={name}
+                placeholder={placeholder}
+                value={value}
+                onChange={onChange}
                 style={style}
                 {...props}
             />
-            {props.children}
+            {children}
 
-            {props.error &&
-                <div style={{ color: 'red' }}>
-                    {props.error}
+            {error &&
+                <div className={classNames({ 'mg-error-msg': error })}>
+                    {error}
                 </div>
             }
         </div>

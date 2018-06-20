@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import classnames from 'classnames';
+import classNames from 'classnames';
 
 import Label from '../Label';
 
@@ -19,7 +19,7 @@ const Textarea = ({
     resize,
     width,
     height,
-    required = false,
+    required,
     ...props
 }) => {
 
@@ -30,12 +30,12 @@ const Textarea = ({
         height: height && height
     };
 
-    const myClass = classnames('mg-input', {
+    const myClass = classNames('mg-textarea', {
         ['mg-error']: error
     });
 
     return (
-        <div className="mg-textarea">
+        <div className={myClass}>
             <Label
                 htmlFor={htmlId}
                 label={label}
@@ -48,15 +48,15 @@ const Textarea = ({
                 placeholder={placeholder}
                 onChange={onChange}
                 style={style}
+                value={value}
                 {...props}
             >
-                {value}
             </textarea>
 
             {children}
 
             {error &&
-                <div style={{ color: 'red' }}>
+                <div className={classNames({ 'mg-error-msg': error })}>
                     {error}
                 </div>
             }
@@ -65,7 +65,8 @@ const Textarea = ({
 };
 
 Textarea.defaultProps = {
-    resize: 'none'
+    resize: 'none',
+    required: false
 };
 
 Textarea.propTypes = {

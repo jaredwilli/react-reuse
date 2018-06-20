@@ -18,8 +18,8 @@ const Input = ({
     error,
     width,
     height,
-    type = 'text',
-    required = false,
+    type,
+    required,
     ...props
 }) => {
 
@@ -62,6 +62,11 @@ const Input = ({
             }
         </div>
     );
+};
+
+Input.defaultProps = {
+    type: 'text',
+    required: false
 };
 
 Input.propTypes = {

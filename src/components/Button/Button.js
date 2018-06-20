@@ -1,25 +1,44 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import classNames from 'classnames';
 
 import './Button.css';
 
-const Button = ({ htmlId, name, type, size = '', classname = '', onClick, children, ...props }) => (
+const Button = ({
+    htmlId,
+    name,
+    type,
+    size,
+    classname,
+    onClick,
+    children,
+    ...props
+}) => {
 
-    <button
-        className={`btn mg-button ${size} ${classname}`}
-        id={htmlId}
-        name={name}
-        type={type}
-        onClick={onClick}
-        {...props}
-    >
-        {children}
-    </button>
-);
+    const myClass = classNames('btn mg-button', {
+        [size]: size,
+        [classname]: classname
+    });
+
+    return (
+        <button
+            className={myClass}
+            id={htmlId}
+            name={name}
+            type={type}
+            onClick={onClick}
+            {...props}
+        >
+            {children}
+        </button>
+    );
+};
 
 Button.defaultProps = {
     type: 'submit',
-    children: 'Submit'
+    children: 'Submit',
+    size: '',
+    classname: ''
 };
 
 Button.propTypes = {

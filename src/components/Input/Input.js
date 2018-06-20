@@ -4,55 +4,55 @@ import classNames from 'classnames';
 
 import Label from '../Label';
 
-import './Textarea.css';
+import './Input.css';
 
-/** Textarea with integrated label to enforce consistency in layout, error display, label placement, and required field marker. */
-const Textarea = ({
+/** Input with integrated label to enforce consistency in layout, error display, label placement, and required field marker. */
+const Input = ({
     htmlId,
     name,
     placeholder,
     onChange,
     value,
-    children,
     label,
+    children,
     error,
-    resize,
     width,
     height,
+    type,
     required,
     ...props
 }) => {
 
     const style = {
         borderColor: error ? 'red' : '#ccc',
-        resize: resize && resize,
         width: width && width,
         height: height && height
     };
 
-    const myClass = classNames('mg-textarea', {
+    const myClass = classNames('mg-input', {
         ['mg-error']: error
     });
 
     return (
         <div className={myClass}>
-            <Label
-                htmlFor={htmlId}
-                label={label}
-                required={required}
-            />
+            {label &&
+                <Label
+                    htmlFor={htmlId}
+                    label={label}
+                    required={required}
+                />
+            }
 
-            <textarea
+            <input
                 id={htmlId}
+                type={type}
                 name={name}
                 placeholder={placeholder}
+                value={value}
                 onChange={onChange}
                 style={style}
-                value={value}
                 {...props}
-            >
-            </textarea>
-
+            />
             {children}
 
             {error &&
@@ -64,12 +64,12 @@ const Textarea = ({
     );
 };
 
-Textarea.defaultProps = {
-    resize: 'none',
+Input.defaultProps = {
+    type: 'text',
     required: false
 };
 
-Textarea.propTypes = {
+Input.propTypes = {
     /** Unique HTML ID. Used for tying label to HTML input. Handy hook for automated testing. */
     htmlId: PropTypes.string.isRequired,
 
@@ -80,19 +80,16 @@ Textarea.propTypes = {
     label: PropTypes.string,
 
     /** Input type */
-    type: PropTypes.oneOf(['text', 'number', 'password']),
+    type: PropTypes.oneOf(['text', 'email', 'number', 'password']),
 
     /** Mark label with asterisk if set to true */
     required: PropTypes.bool,
 
     /** Function to call onChange */
-    onChange: PropTypes.func.isRequired,
+    onChange: PropTypes.func,
 
     /** Placeholder to display when empty */
     placeholder: PropTypes.string,
-
-    /** Value */
-    value: PropTypes.any,
 
     /** Width */
     width: PropTypes.string,
@@ -100,8 +97,8 @@ Textarea.propTypes = {
     /** Height */
     height: PropTypes.string,
 
-    /** Resize value or none */
-    resize: PropTypes.string,
+    /** Value */
+    value: PropTypes.any,
 
     /** String to display when error occurs */
     error: PropTypes.string,
@@ -110,4 +107,4 @@ Textarea.propTypes = {
     children: PropTypes.node
 };
 
-export default Textarea;
+export default Input;

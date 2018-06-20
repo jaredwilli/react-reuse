@@ -1,8 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Textarea renders the component correctly 1`] = `
+exports[`Input renders the component correctly 1`] = `
 <div
-  className="mg-textarea"
+  className="mg-input"
 >
   <label
     htmlFor="test"
@@ -15,7 +15,7 @@ exports[`Textarea renders the component correctly 1`] = `
     Test
      
   </label>
-  <textarea
+  <input
     id="test"
     name="Test"
     onChange={[Function]}
@@ -24,10 +24,10 @@ exports[`Textarea renders the component correctly 1`] = `
       Object {
         "borderColor": "#ccc",
         "height": undefined,
-        "resize": "none",
         "width": undefined,
       }
     }
+    type="text"
     value={undefined}
   />
 </div>

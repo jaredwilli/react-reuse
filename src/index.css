@@ -66,3 +66,15 @@ td {
 .component-page {
     margin-left: 275px;
 }
+
+
+/* Universal styles */
+
+.mg-error input,
+.mg-error textarea {
+    border-color: #cc0000;
+}
+
+.mg-error-msg {
+    color: #cc0000;
+}

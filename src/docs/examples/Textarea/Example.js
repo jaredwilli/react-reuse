@@ -58,6 +58,20 @@ const Example = () => {
             <br />
             <br />
 
+            <Textarea
+                htmlId="cols-rows-textarea"
+                name="description"
+                label="With cols and rows attributes"
+                placeholder="Some placeholder text"
+                onChange={() => showMessage()}
+                error="This is an error message"
+                cols={50}
+                rows={10}
+                resize="vertical"
+            />
+            <br />
+            <br />
+
         </div>
     );
 };

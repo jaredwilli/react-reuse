@@ -2,7 +2,7 @@
 
 exports[`Textarea renders the component correctly 1`] = `
 <div
-  className="mg-textarea"
+  className="textarea"
 >
   <label
     htmlFor="test"

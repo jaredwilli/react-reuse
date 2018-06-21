@@ -29,12 +29,12 @@ const Input = ({
         height: height && height
     };
 
-    const myClass = classNames('mg-input', {
-        ['mg-error']: error
+    const inputClass = classNames('input', {
+        'error': error
     });
 
     return (
-        <div className={myClass}>
+        <div className={inputClass}>
             {label &&
                 <Label
                     htmlFor={htmlId}
@@ -56,7 +56,7 @@ const Input = ({
             {children}
 
             {error &&
-                <div className={classNames({ 'mg-error-msg': error })}>
+                <div className="error-msg">
                     {error}
                 </div>
             }

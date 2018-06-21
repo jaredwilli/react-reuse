@@ -2,7 +2,7 @@
 
 exports[`Input renders the component correctly 1`] = `
 <div
-  className="mg-input"
+  className="input"
 >
   <label
     htmlFor="test"

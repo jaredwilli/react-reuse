@@ -28,7 +28,7 @@ describe('Button', () => {
         const tree = renderer.create(<Button {...props}>Disabled Block Level Button</Button>).toJSON();
         expect(tree).toMatchSnapshot();
 
-        expect(tree.props.className).toBe('btn mg-button block');
+        expect(tree.props.className).toBe('btn button block');
         expect(tree.children[0]).toBe('Disabled Block Level Button');
     });
 });

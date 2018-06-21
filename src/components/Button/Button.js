@@ -15,14 +15,14 @@ const Button = ({
     ...props
 }) => {
 
-    const myClass = classNames('btn mg-button', {
-        [size]: size,
-        [classname]: classname
+    const buttonClass = classNames('btn button', {
+        [classname]: classname,
+        [size]: size
     });
 
     return (
         <button
-            className={myClass}
+            className={buttonClass}
             id={htmlId}
             name={name}
             type={type}
@@ -35,10 +35,10 @@ const Button = ({
 };
 
 Button.defaultProps = {
-    type: 'submit',
     children: 'Submit',
-    size: '',
-    classname: ''
+    type: 'submit',
+    classname: '',
+    size: ''
 };
 
 Button.propTypes = {

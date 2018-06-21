@@ -2,7 +2,7 @@
 
 exports[`Button renders the component correctly 1`] = `
 <button
-  className="btn mg-button"
+  className="btn button"
   id="test"
   label="Test"
   name="Test"
@@ -15,7 +15,7 @@ exports[`Button renders the component correctly 1`] = `
 
 exports[`Button renders the component correctly 2`] = `
 <button
-  className="btn mg-button block"
+  className="btn button block"
   disabled={true}
   id="disabled-button"
   name="disabled-button"

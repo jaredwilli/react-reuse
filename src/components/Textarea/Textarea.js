@@ -30,12 +30,12 @@ const Textarea = ({
         height: height && height
     };
 
-    const myClass = classNames('mg-textarea', {
-        ['mg-error']: error
+    const textareaClass = classNames('textarea', {
+        'error': error
     });
 
     return (
-        <div className={myClass}>
+        <div className={textareaClass}>
             <Label
                 htmlFor={htmlId}
                 label={label}
@@ -56,7 +56,7 @@ const Textarea = ({
             {children}
 
             {error &&
-                <div className={classNames({ 'mg-error-msg': error })}>
+                <div className="error-msg">
                     {error}
                 </div>
             }

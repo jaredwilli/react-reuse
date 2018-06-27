@@ -2,6 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
+import Loader from '../Loader';
+
 import './Button.css';
 
 const Button = ({
@@ -12,10 +14,12 @@ const Button = ({
     classname,
     onClick,
     children,
+    disabled,
+    isLoading,
     ...props
 }) => {
 
-    const buttonClass = classNames('btn button', {
+    const buttonClass = classNames('btn mg-button', {
         [classname]: classname,
         [size]: size
     });
@@ -27,8 +31,9 @@ const Button = ({
             name={name}
             type={type}
             onClick={onClick}
-            {...props}
         >
+            {isLoading && <Loader stroke="#fff" />}
+
             {children}
         </button>
     );
@@ -61,7 +66,13 @@ Button.propTypes = {
     size: PropTypes.string,
 
     /** Any additional classnames to add to it */
-    classname: PropTypes.string
+    classname: PropTypes.string,
+
+    /** Should the button be disabled */
+    disabled: PropTypes.bool,
+
+    /** If loading then show loader icon */
+    isLoading: PropTypes.bool
 };
 
 export default Button;

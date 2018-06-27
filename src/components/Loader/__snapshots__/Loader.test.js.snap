@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Loader renders the component correctly 1`] = `
+<svg
+  height="22px"
+  preserveAspectRatio="xMidYMid"
+  viewBox="0 0 100 100"
+  width="22px"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <circle
+    cx="50"
+    cy="50"
+    fill="none"
+    r="45"
+    stroke="#29292A"
+    strokeDasharray="212.05750411731105 72.68583470577035"
+    strokeWidth="10"
+    transform="rotate(276 50 50)"
+  >
+    <animateTransform
+      attributeName="transform"
+      begin="0s"
+      calcMode="linear"
+      dur="1s"
+      keyTimes="0;1"
+      repeatCount="indefinite"
+      type="rotate"
+      values="0 50 50;360 50 50"
+    />
+  </circle>
+</svg>
+`;

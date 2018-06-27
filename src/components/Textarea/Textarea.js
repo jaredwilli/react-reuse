@@ -49,7 +49,6 @@ const Textarea = ({
                 onChange={onChange}
                 style={style}
                 value={value}
-                {...props}
             >
             </textarea>
 

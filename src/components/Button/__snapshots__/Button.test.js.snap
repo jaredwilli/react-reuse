@@ -2,9 +2,8 @@
 
 exports[`Button renders the component correctly 1`] = `
 <button
-  className="btn button"
+  className="btn mg-button"
   id="test"
-  label="Test"
   name="Test"
   onClick={[Function]}
   type="submit"
@@ -15,8 +14,7 @@ exports[`Button renders the component correctly 1`] = `
 
 exports[`Button renders the component correctly 2`] = `
 <button
-  className="btn button block"
-  disabled={true}
+  className="btn mg-button block"
   id="disabled-button"
   name="disabled-button"
   onClick={[Function]}

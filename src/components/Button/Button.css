@@ -43,3 +43,8 @@
 .mg-button.block {
     width: 100%;
 }
+
+.mg-button svg {
+    margin-right: 10px;
+    vertical-align: bottom;
+}

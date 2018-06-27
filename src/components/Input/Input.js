@@ -51,7 +51,6 @@ const Input = ({
                 value={value}
                 onChange={onChange}
                 style={style}
-                {...props}
             />
             {children}
 

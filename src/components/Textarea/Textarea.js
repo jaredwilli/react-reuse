@@ -19,8 +19,7 @@ const Textarea = ({
     resize,
     width,
     height,
-    required,
-    ...props
+    required
 }) => {
 
     const style = {
@@ -49,7 +48,6 @@ const Textarea = ({
                 onChange={onChange}
                 style={style}
                 value={value}
-                {...props}
             >
             </textarea>
 
@@ -78,9 +76,6 @@ Textarea.propTypes = {
 
     /** Input label */
     label: PropTypes.string,
-
-    /** Input type */
-    type: PropTypes.oneOf(['text', 'number', 'password']),
 
     /** Mark label with asterisk if set to true */
     required: PropTypes.bool,

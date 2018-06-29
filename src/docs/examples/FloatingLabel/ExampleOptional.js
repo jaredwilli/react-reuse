@@ -1,16 +1,48 @@
 import React from 'react';
 import FloatingLabel from 'react-reuse/FloatingLabel';
 
-/** Custom message */
+/** Default example */
 function ExampleOptional() {
     return (
-        <FloatingLabel
-            type="text"
-            id="name"
-            placeholder="Name"
-            errorMsg="Full name can contain only the alphabets and space"
-            pattern={/^[a-z\s]+$/i}
-        />
+        <div>
+            <FloatingLabel
+                type="text"
+                id="name"
+                placeholder="First Name"
+                errorMsg="Full name can contain letters and space"
+                pattern={/^[a-z\s]+$/i}
+            />
+            <br />
+            <br />
+
+            <FloatingLabel
+                type="text"
+                id="name"
+                placeholder="First Name"
+                errorMsg="Full name can contain letters and space"
+                pattern={/^[a-z\s]+$/i}
+                width={'60%'}
+            />
+            <br />
+            <br />
+
+            <FloatingLabel
+                type="email"
+                id="email"
+                placeholder="Email Address"
+                width={'60%'}
+            />
+            <br />
+            <br />
+
+            <FloatingLabel
+                type="textarea"
+                id="text"
+                placeholder="Description"
+                width={'60%'}
+                height={'150px'}
+            />
+        </div>
     );
 }
 

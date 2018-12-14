@@ -36,5 +36,6 @@ exports[`DealArrowWrapper renders the component correctly 1`] = `
     </svg>
   </div>
   
+  
 </div>
 `;

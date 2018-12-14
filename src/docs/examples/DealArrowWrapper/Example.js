@@ -58,54 +58,81 @@ function Example() {
             />
             <br />
             <br />
-            <h3>Example 3 - with label and info text</h3>
+            <h3>Example 3 - with label and IMV text</h3>
             <DealArrowWrapper
                 rating="great"
                 label="Great Deal"
-                info="$4,245 below"
+                imv="$4,245 below"
             />
             <br />
             <br />
             <DealArrowWrapper
                 rating="good"
                 label="Good Deal"
-                info="$4,245 below"
+                imv="$4,245 below"
             />
             <br />
             <br />
             <DealArrowWrapper
                 rating="fair"
                 label="Fair Deal"
-                info="$4,245 below"
+                imv="$4,245 below"
             />
             <br />
             <br />
             <DealArrowWrapper
                 rating="high"
                 label="High Price"
-                info="$4,245 below"
+                imv="$4,245 below"
             />
             <br />
             <br />
             <DealArrowWrapper
                 rating="overpriced"
                 label="Overpriced"
-                info="$4,245 below"
+                imv="$4,245 below"
             />
             <br />
             <br />
             <DealArrowWrapper
                 rating="no-price"
                 label="No price analysis"
-                info="$4,245 below"
+                imv="$4,245 below"
             />
             <br />
             <br />
             <DealArrowWrapper
                 rating="uncertain"
                 label="Uncertain"
-                info="$4,245 below"
+                imv="$4,245 below"
             />
+            <br />
+            <br />
+            <div style={{ width: '327px' }}>
+                <h3>Example 4 - with label and info text</h3>
+                <DealArrowWrapper
+                    rating="great"
+                    label="Great Deal"
+                    info="Mike, a first-time used car shopper, found a great deal on a SUV for his family"
+                />
+                <br />
+                <br />
+                <DealArrowWrapper
+                    rating="good"
+                    label="Good Deal"
+                    info="Dave found a good deal on an SUV for him and his dogs"
+                />
+                <br />
+                <br />
+                <DealArrowWrapper
+                    rating="fair"
+                    label="Fair Deal"
+                    info="Some other string of text for info example"
+                />
+            </div>
+            <br />
+            <br />
+
         </div>
     );
 }

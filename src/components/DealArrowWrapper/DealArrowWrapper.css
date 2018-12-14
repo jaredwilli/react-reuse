@@ -1,18 +1,29 @@
 
 .deal {
     display: inline-flex;
+    align-items: center;
 }
 
 .deal .deal-meta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     margin-left: 5px;
 }
 .deal .deal-meta h6 {
     color: #324054;
     font-size: 16px;
     text-transform: uppercase;
+    white-space: nowrap;
     margin: 0;
 }
-.deal .deal-meta p {
+.deal .deal-meta .imv {
+
+}
+.deal .deal-info {
+    margin-left: 10px;
+}
+.deal .deal-info p {
     color: #324054;
     margin: 0;
 }

@@ -14,16 +14,21 @@ const DealArrowWrapper = (props) => {
                     <DealArrow className={props.arrowClassName} />
                 </div>
             }
-            {(props.label || props.info) &&
+            {(props.label || props.imv) &&
                 <div className="deal-meta">
                     {props.label &&
                         <h6>{props.label}</h6>
                     }
-                    {props.info &&
-                        <div className="deal-info">
-                            <p>{props.info}</p>
+                    {props.imv &&
+                        <div className="deal-imv">
+                            <p>{props.imv}</p>
                         </div>
                     }
+                </div>
+            }
+            {props.info &&
+                <div className="deal-info">
+                    <p>{props.info}</p>
                 </div>
             }
         </div>
@@ -33,6 +38,7 @@ const DealArrowWrapper = (props) => {
 DealArrowWrapper.defaultProps = {
     className: '',
     label: '',
+    imv: '',
     info: ''
 };
 
@@ -45,6 +51,8 @@ DealArrowWrapper.propTypes = {
     arrowClassName: PropTypes.string,
     /** The label for the deal arrow - Great, Good, Fair etc. */
     label: PropTypes.string,
+    /** The IMV text for the deal arrow */
+    imv: PropTypes.string,
     /** The deal rating info text to display */
     info: PropTypes.string
 };

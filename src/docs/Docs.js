@@ -29,7 +29,7 @@ class Docs extends Component {
 
         return (
             <div className="docs">
-                <h1>React Reuse</h1>
+                <h1><a href="https://github.com/jaredwilli/react-reuse">React Reuse</a></h1>
 
                 <Navigation components={componentData.map(component => component.name)} />
                 <ComponentPage component={component} />

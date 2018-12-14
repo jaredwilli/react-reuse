@@ -36,14 +36,14 @@ npm version major|minor|patch
 
 Commit your changes, and push your branch.
 
-# Publishing
+# Publishing to NPM Registry
 To publish the package to NPM simply run the publish command. This will run build:lib which runs all the necessary build scripts for building the library for publishing and public use.
 
 ```
 npm publish
 ```
 
-# Deploying
+# Deploying to Github Pages
 To deploy the docs for the component library to the github pages simply run the deploy script. This will run build:docs which runs the build.js script to generate the documentation and all the necessary output for the page to render the component library.
 
 ```

@@ -11,6 +11,7 @@ function Example() {
             <Rating />
             <br />
             <br />
+            <Rating size={50} />
             <Rating size={20} />
             <Rating rating={2} size={20} />
             <Rating rating={4.2} size={20} />

@@ -1,3 +1,5 @@
+export { default as DealArrowWrapper } from './DealArrowWrapper';
+export { default as DealArrow } from './DealArrow';
 export { default as DotIcon } from './DotIcon';
 export { default as EyeIcon } from './EyeIcon';
 export { default as Hello } from './Hello';

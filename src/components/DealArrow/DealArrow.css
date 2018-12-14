@@ -1,0 +1,8 @@
+svg.deal-arrow {
+    vertical-align: middle;
+    width: 31px;
+}
+
+svg.deal-arrow.arrow-small {
+    width: 21px;
+}

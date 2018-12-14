@@ -46,9 +46,9 @@ table {
     cursor: pointer;
 }
 
-.props tr td:last-of-type {
+/* .props tr td:last-of-type {
     text-align: center;
-}
+} */
 
 .props th,
 td {

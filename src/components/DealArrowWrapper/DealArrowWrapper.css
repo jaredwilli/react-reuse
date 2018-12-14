@@ -1,0 +1,103 @@
+
+.deal {
+    display: inline-flex;
+}
+
+.deal .deal-meta {
+    margin-left: 5px;
+}
+.deal .deal-meta h6 {
+    color: #324054;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin: 0;
+}
+.deal .deal-meta p {
+    color: #324054;
+    margin: 0;
+}
+
+.deal .deal-rating {
+    background: none;
+    border: none;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.deal .deal-rating svg.deal-arrow {
+    vertical-align: middle;
+    width: 31px;
+}
+
+.deal .deal-rating svg.deal-arrow.arrow-small {
+    width: 21px;
+}
+
+.deal .deal-rating .uncertain {
+    opacity: 0;
+}
+.deal .deal-rating .no-price {
+    opacity: 0;
+}
+.deal .deal-rating .arrow {
+    opacity: 1;
+}
+
+/* Great */
+.deal .deal-rating.great svg.deal-arrow {
+    transform: rotate(-90deg);
+}
+.deal .deal-rating.great circle {
+    fill: #006b00;
+}
+
+/* Good */
+.deal .deal-rating.good svg.deal-arrow {
+    transform: rotate(-45deg);
+}
+.deal .deal-rating.good circle {
+    fill: #009b00;
+}
+
+/* Fair */
+.deal .deal-rating.fair svg.deal-arrow circle {
+    fill: #00bd00;
+}
+
+/* High */
+.deal .deal-rating.high svg.deal-arrow {
+    transform: rotate(45deg);
+}
+.deal .deal-rating.high circle {
+    fill: #ff8400;
+}
+
+/* Overpriced */
+.deal .deal-rating.overpriced svg.deal-arrow {
+    transform: rotate(90deg);
+}
+.deal .deal-rating.overpriced circle {
+    fill: #f60000;
+}
+
+/* Uncertain */
+.deal .deal-rating.uncertain svg.deal-arrow circle {
+    fill: #ccc;
+}
+.deal .deal-rating.uncertain svg.deal-arrow .uncertain {
+    opacity: 1;
+}
+.deal .deal-rating.uncertain svg.deal-arrow .arrow {
+    opacity: 0;
+}
+
+/* No Price */
+.deal .deal-rating.no-price svg.deal-arrow circle {
+    fill: #ccc;
+}
+.deal .deal-rating.no-price svg.deal-arrow .no-price {
+    opacity: 1;
+}
+.deal .deal-rating.no-price svg.deal-arrow .arrow {
+    opacity: 0;
+}

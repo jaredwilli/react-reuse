@@ -17,8 +17,8 @@
     white-space: nowrap;
     margin: 0;
 }
-.deal .deal-meta .imv {
-
+.deal .deal-meta .deal-imv p {
+    margin: 0;
 }
 .deal .deal-info {
     margin-left: 10px;

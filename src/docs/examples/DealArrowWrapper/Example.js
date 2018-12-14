@@ -108,7 +108,7 @@ function Example() {
             />
             <br />
             <br />
-            <div style={{ width: '327px' }}>
+            <div style={{ width: '620px' }}>
                 <h3>Example 4 - with label and info text</h3>
                 <DealArrowWrapper
                     rating="great"

@@ -58,53 +58,53 @@ function Example() {
             />
             <br />
             <br />
-            <h3>Example 3 - with label and IMV text</h3>
+            <h3>Example 3 - with label and differential text</h3>
             <DealArrowWrapper
                 rating="great"
                 label="Great Deal"
-                imv="$4,245 below"
+                differential="$4,245 below"
             />
             <br />
             <br />
             <DealArrowWrapper
                 rating="good"
                 label="Good Deal"
-                imv="$4,245 below"
+                differential="$4,245 below"
             />
             <br />
             <br />
             <DealArrowWrapper
                 rating="fair"
                 label="Fair Deal"
-                imv="$4,245 below"
+                differential="$4,245 below"
             />
             <br />
             <br />
             <DealArrowWrapper
                 rating="high"
                 label="High Price"
-                imv="$4,245 below"
+                differential="$4,245 below"
             />
             <br />
             <br />
             <DealArrowWrapper
                 rating="overpriced"
                 label="Overpriced"
-                imv="$4,245 below"
+                differential="$4,245 below"
             />
             <br />
             <br />
             <DealArrowWrapper
                 rating="no-price"
                 label="No price analysis"
-                imv="$4,245 below"
+                differential="$4,245 below"
             />
             <br />
             <br />
             <DealArrowWrapper
                 rating="uncertain"
                 label="Uncertain"
-                imv="$4,245 below"
+                differential="$4,245 below"
             />
             <br />
             <br />
